@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en" name="language" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="/assets/style-ycUH7M8nSa99Yp4GC3Dw1g.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+/*&lt;![CDATA[*/
+
+             .pace {
+                  -webkit-pointer-events: none;
+                  pointer-events: none;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  user-select: none;
+                }
+                
+                .pace-inactive {
+                  display: none;
+                }
+                
+                .pace .pace-progress {
+                  background: #86929B;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 0;
+                  right: 100%;
+                  width: 100%;
+                  height: 3px;
+                }
+                
+                .pace .pace-progress-inner {
+                  display: block;
+                  position: absolute;
+                  right: 0px;
+                  width: 100px;
+                  height: 100%;
+                  box-shadow: 0 0 10px #86929B, 0 0 5px #86929B;
+                  opacity: 1.0;
+                  -webkit-transform: rotate(3deg) translate(0px, -4px);
+                  -moz-transform: rotate(3deg) translate(0px, -4px);
+                  -ms-transform: rotate(3deg) translate(0px, -4px);
+                  -o-transform: rotate(3deg) translate(0px, -4px);
+                  transform: rotate(3deg) translate(0px, -4px);
+                }
+                
+                .pace .pace-activity {
+                  display: block;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 15px;
+                  left: 15px;
+                  width: 14px;
+                  height: 14px;
+                  border: solid 2px transparent;
+                  border-top-color: #86929B;
+                  border-left-color: #86929B;
+                  border-radius: 10px;
+                  -webkit-animation: pace-spinner 400ms linear infinite;
+                  -moz-animation: pace-spinner 400ms linear infinite;
+                  -ms-animation: pace-spinner 400ms linear infinite;
+                  -o-animation: pace-spinner 400ms linear infinite;
+                  animation: pace-spinner 400ms linear infinite;
+                }
+                
+                @-webkit-keyframes pace-spinner {
+                  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-moz-keyframes pace-spinner {
+                  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-o-keyframes pace-spinner {
+                  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-ms-keyframes pace-spinner {
+                  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @keyframes pace-spinner {
+                  0% { transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                 
+        
+/*]]&gt;*/
+</style>
+<title>SystemHUB - Login</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+    <link type="image/x-icon" href="/favicon.ico" rel="icon" />
+    </head>
+<body class="web-user-layout   pace-done"><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<header class="header">
+</header>
+<main class="main">
+    <div class="container">
+        <div class="auth-forgot">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><img src="/resources/images/logo-login.png" class="login-logo" alt="logo" /></h3>
+            <h3 class="panel-title">Reset password</h3>
+        </div>
+        <div class="panel-body">
+            <form method="post" action="/auth/webUser/forgot" id="recovery-form">                            <div class="flash-error">
+                    Not found user                </div>
+                        <div class="section-row">
+                <div class="section-input">
+                    <div class="errors-holder">
+                        <div style="display:none" id="application_models_forms_RecoveryForm_email_em_" class="errorMessage"></div>                    </div>
+                    <input type="email" value="" id="application_models_forms_RecoveryForm_email" name="application_models_forms_RecoveryForm[email]" class="form-control" placeholder="E-mail" />                </div>
+            </div>
+            <div class="section-row recovery-buttons buttons">
+                <input type="submit" value="Recover" name="yt0" class="btn btn-primary" />                <a href="/site" class="btn btn-default">Back to login</a>            </div>
+        </form></div>
+            </div>
+</div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="links">
+            <span>Don’t have an account?</span>
+            <a href="http://www.systemhub.com/" class="create-account js-page-loading">Click here.</a>        </div>
+        <div class="links">
+            <a href="http://help.systemhub.com/" class="create-account js-page-loading">SystemHUB Support Center</a>        </div>
+        <div class="copyright">
+            2017 Copyright systemHUB
+        </div>
+    </div>
+</footer>
+<script src="/assets/script-2-CYRXOuPhRhQ6DstoZDiwAg.js?1504024693" type="text/javascript"></script>
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+jQuery(function($) {
+	
+	            if (typeof localStorage === 'object') {
+	                try {
+	                    localStorage.setItem('localStorage', 1);
+	                    localStorage.removeItem('localStorage');
+	                } catch (e) {
+	                    Storage.prototype._setItem = Storage.prototype.setItem;
+	                    Storage.prototype.setItem = function() {};
+	                    console.log('Your web browser does not support storing settings locally. In Safari, the most common cause of this is using "Private Browsing Mode". Some settings may not save or some features may not work properly for you.');
+	                }
+	            }
+	        
+	jQuery('#recovery-form').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'errorCssClass':'has-error','attributes':[{'id':'application_models_forms_RecoveryForm_email','inputID':'application_models_forms_RecoveryForm_email','errorID':'application_models_forms_RecoveryForm_email_em_','model':'application\\models\\forms\\RecoveryForm','name':'email','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("Email cannot be blank.");
+	}
+	
+	
+	
+	if(jQuery.trim(value)!='' &amp;&amp; !value.match(/^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/)) {
+		messages.push("Email is not a valid email address.");
+	}
+	
+	}}],'errorCss':'error'});
+});
+/*]]&gt;*/
+</script>
+
+
+</body></html>

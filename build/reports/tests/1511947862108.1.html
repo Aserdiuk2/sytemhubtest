@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="" style="height: auto;"><head>
+                    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        
+                                        <link href="/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/select2/select2.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/styles.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/layout.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/tree.css" rel="stylesheet" />
+                    
+    <link href="/bundles/app/css/custom.css" rel="stylesheet" />
+
+                                    <script>
+                    window.SONATA_CONFIG = {
+                        CONFIRM_EXIT: true,
+                        USE_SELECT2: true,
+                        USE_ICHECK: true,
+                        USE_STICKYFORMS: true                    };
+                    window.SONATA_TRANSLATIONS = {
+                        CONFIRM_EXIT: '\u0423\x20\u0432\u0430\u0441\x20\u0435\u0441\u0442\u044C\x20\u043D\u0435\u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u0435\x20\u0434\u0430\u043D\u043D\u044B\u0435'
+                    };
+
+                    // http://getbootstrap.com/getting-started/#support-ie10-width
+                    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                        var msViewportStyle = document.createElement('style');
+                        msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                        document.querySelector('head').appendChild(msViewportStyle);
+                    }
+                </script>
+            
+                                                <script src="/bundles/sonatacore/vendor/jquery/dist/jquery.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/moment/min/moment.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery-form/jquery.form.js"></script>
+                                    <script src="/bundles/sonataadmin/jquery/jquery.confirmExit.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/select2/select2.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/iCheck/icheck.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/readmore-js/readmore.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                                    <script src="/bundles/sonataadmin/Admin.js"></script>
+                                    <script src="/bundles/sonataadmin/treeview.js"></script>
+                            
+                                                    <script src="/bundles/sonatacore/vendor/moment/locale/ru.js"></script>
+            
+                                        
+                                                    <script src="/bundles/sonatacore/vendor/select2/select2_locale_ru.js"></script>
+                                    
+        <title>
+                    Администрирование
+
+                            Панель администрирования
+                            </title>
+    </head>
+    <body class="sonata-bc skin-black fixed" style="height: auto;">
+
+    <div class="wrapper" style="height: auto;">
+
+                    <header class="main-header">
+                                    <noscript>
+                        &lt;div class="noscript-warning"&gt;
+                            В вашем браузере отключен Javascipt. Некоторые функции сайта будут недоступны.
+                        &lt;/div&gt;
+                    </noscript>
+                                                    <a href="/caterer/dashboard" class="logo"><img alt="Caterer Admin" src="/bundles/sonataadmin/logo_title.png" /><span>Caterer Admin</span></a>                                                    <nav role="navigation" class="navbar navbar-static-top">
+                        <a role="button" data-toggle="offcanvas" class="sidebar-toggle" href="#">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+
+                        <div class="navbar-left">
+                                                            <div class="hidden-xs">
+                                                                    </div>
+                                                    </div>
+
+                                                                                    <div class="navbar-custom-menu">
+                                    <ul class="nav navbar-nav">
+                                            <li>
+        <a href="/caterer/app/comment/list" class="dropdown-toggle">
+            <i aria-hidden="true" class="fa fa-commenting"></i> 6
+        </a>
+    </li>
+                                                <li class="dropdown">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                    <i aria-hidden="true" class="fa fa-plus-square fa-fw"></i> <i aria-hidden="true" class="fa fa-caret-down"></i>
+                                                </a>
+                                                        
+            
+                                                                                    
+                                                                                    
+                                                                                    
+                                        
+                                
+    
+    <div style="width: 280px;" class="dropdown-menu multi-column dropdown-add">
+                                
+            
+                                                            <div class="container-fluid">
+                            <div class="row">
+                    
+                    <ul class="dropdown-menu col-md-6">
+                
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Ингредиенты
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/ingredient/create" tabindex="-1" role="menuitem">Ингредиенты</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                
+                                    <li class="divider" role="presentation"></li>
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Блюда
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/dish/create" tabindex="-1" role="menuitem">Блюда</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                                                            </ul>
+                    
+                    <ul class="dropdown-menu col-md-6">
+                
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Комплексные Обеды
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/complexdish/create" tabindex="-1" role="menuitem">Комплексные блюда</a>
+                            </li>
+                                                            
+                                            </ul>
+                        </div>
+                    </div>
+                
+                        </div>
+                                            </li>
+                                        
+                                                                                    <li class="dropdown user-menu">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                    <i aria-hidden="true" class="fa fa-user fa-fw"></i> <i aria-hidden="true" class="fa fa-caret-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-user">
+                                                    <li><a href="/logout">Выход</a></li>
+                                                </ul>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                                                        </nav>
+                            </header>
+        
+                                    <aside class="main-sidebar">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 921px;"><section class="sidebar" style="height: 921px; overflow: hidden; width: auto;">
+                            
+    
+                             <ul class="sidebar-menu">
+                            
+                <li class="first">            <a href="/caterer/app/ingredient/list"><i class="fa fa-folder"></i>Ингредиенты</a>        
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/app/dish/list"><i class="fa fa-folder"></i>Блюда</a>        
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/app/complexdish/list"><i class="fa fa-folder"></i>Комплексные Обеды</a>        
+    </li>
+
+    
+                    
+                                    <li class="treeview">            <a href="#"><i class="fa fa-folder"></i><span>Меню</span><span class="pull-right-container"><i class="fa pull-right fa-angle-left"></i></span></a>                <ul class="active treeview-menu menu_level_1">
+                            
+                <li class="first last">            <a href="/caterer/app/menu/today/edit-menu"><i aria-hidden="true" class="fa fa-angle-double-right"></i>Меню</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/report"><i class="fa fa-folder"></i>Отчеты</a>        
+    </li>
+
+    
+                    
+                <li class="last">            <a href="/caterer/app/comment/list"><i class="fa fa-folder"></i>Комментарии</a>        
+    </li>
+
+    
+
+    </ul>
+
+                <span class="welcome_caterer">Добро пожаловать, Обеды от Веры</span>
+                        </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%; width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 921px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                </aside>
+            
+            <div class="content-wrapper" style="min-height: 971px;">
+                                    <section class="content-header">
+
+                                                                                                                                                            </section>
+
+                    <section class="content">
+                        
+                                                                                                                
+                            
+                                                            <div class="sonata-ba-content"><div class="row">
+                        
+                
+                                    
+                
+                    <div class="col-md-12">
+                                                            <div class="cms-block cms-block-element" id="cms-block-5a1e7e502500b">
+                        
+                    <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Ингредиенты</h3>
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover">
+                        <tbody>
+                                                                                                        <tr>
+                                                <td width="40%" class="sonata-ba-list-label">
+                                                    Ингредиенты
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                                                                                        <a href="/caterer/app/ingredient/create" class="btn btn-link btn-flat">
+        <i aria-hidden="true" class="fa fa-plus-circle"></i>
+        Добавить новый
+    </a>
+                                                                                                                    <a href="/caterer/app/ingredient/list" class="btn btn-link btn-flat">
+    <i aria-hidden="true" class="fa fa-list"></i>
+    Список
+</a>
+                                                                                                            </div>
+                                                </td>
+                                            </tr>
+                                                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+                            
+                    <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Блюда</h3>
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover">
+                        <tbody>
+                                                                                                        <tr>
+                                                <td width="40%" class="sonata-ba-list-label">
+                                                    Блюда
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                                                                                        <a href="/caterer/app/dish/create" class="btn btn-link btn-flat">
+        <i aria-hidden="true" class="fa fa-plus-circle"></i>
+        Добавить новый
+    </a>
+                                                                                                                    <a href="/caterer/app/dish/list" class="btn btn-link btn-flat">
+    <i aria-hidden="true" class="fa fa-list"></i>
+    Список
+</a>
+                                                                                                            </div>
+                                                </td>
+                                            </tr>
+                                                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+                            
+                    <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Комплексные Обеды</h3>
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover">
+                        <tbody>
+                                                                                                        <tr>
+                                                <td width="40%" class="sonata-ba-list-label">
+                                                    Комплексные блюда
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                                                                                        <a href="/caterer/app/complexdish/create" class="btn btn-link btn-flat">
+        <i aria-hidden="true" class="fa fa-plus-circle"></i>
+        Добавить новый
+    </a>
+                                                                                                                    <a href="/caterer/app/complexdish/list" class="btn btn-link btn-flat">
+    <i aria-hidden="true" class="fa fa-list"></i>
+    Список
+</a>
+                                                                                                            </div>
+                                                </td>
+                                            </tr>
+                                                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+                            
+                    <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Комментарии</h3>
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover">
+                        <tbody>
+                                                                                                        <tr>
+                                                <td width="40%" class="sonata-ba-list-label">
+                                                    Комментарий
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                                                                                    <a href="/caterer/app/comment/list" class="btn btn-link btn-flat">
+    <i aria-hidden="true" class="fa fa-list"></i>
+    Список
+</a>
+                                                                                                            </div>
+                                                </td>
+                                            </tr>
+                                                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+                                                </div>
+        
+                    </div></div>
+                            
+                            
+                            
+                            
+                                                                        </section>
+                            </div>
+            </div>
+
+    
+    
+
+</body></html>

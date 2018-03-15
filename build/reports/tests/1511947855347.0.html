@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="" style="height: auto;"><head>
+                    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        
+                                            <link href="/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/select2/select2.css" rel="stylesheet" />
+                            <link href="/bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/styles.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/layout.css" rel="stylesheet" />
+                            <link href="/bundles/sonataadmin/css/tree.css" rel="stylesheet" />
+                    
+    <link href="/bundles/app/css/custom.css" rel="stylesheet" />
+
+
+                                        <script>
+                    window.SONATA_CONFIG = {
+                        CONFIRM_EXIT: true,
+                        USE_SELECT2: true,
+                        USE_ICHECK: true,
+                        USE_STICKYFORMS: true                    };
+                    window.SONATA_TRANSLATIONS = {
+                        CONFIRM_EXIT: '\u0423\x20\u0432\u0430\u0441\x20\u0435\u0441\u0442\u044C\x20\u043D\u0435\u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u0435\x20\u0434\u0430\u043D\u043D\u044B\u0435'
+                    };
+
+                    // http://getbootstrap.com/getting-started/#support-ie10-width
+                    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                        var msViewportStyle = document.createElement('style');
+                        msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                        document.querySelector('head').appendChild(msViewportStyle);
+                    }
+                </script>
+            
+                                                <script src="/bundles/sonatacore/vendor/jquery/dist/jquery.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/moment/min/moment.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery-form/jquery.form.js"></script>
+                                    <script src="/bundles/sonataadmin/jquery/jquery.confirmExit.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+                                    <script src="/bundles/sonatacore/vendor/select2/select2.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/iCheck/icheck.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/readmore-js/readmore.min.js"></script>
+                                    <script src="/bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+                                    <script src="/bundles/sonataadmin/Admin.js"></script>
+                                    <script src="/bundles/sonataadmin/treeview.js"></script>
+                            
+                                                    <script src="/bundles/sonatacore/vendor/moment/locale/ru.js"></script>
+            
+                                        
+                                                    <script src="/bundles/sonatacore/vendor/select2/select2_locale_ru.js"></script>
+                                    
+
+    <script>
+
+        /**
+         * Select2 Russian translation.
+         */
+        (function ($) {
+            "use strict";
+
+            $.fn.select2.locales['ru'] = {
+                formatNoMatches: function () {
+                    if (this.attr('id') == 's5a1e7e4baeb32_ingredients_1') {
+                        return "Совпадений не найдено, нажмите ctrl + q для создания ингридиента.";
+                    }
+
+                    return "Совпадений не найдено.";
+                },
+                formatInputTooShort: function (input, min) {
+                    return "Пожалуйста, введите еще хотя бы" + character(min - input.length);
+                },
+                formatInputTooLong: function (input, max) {
+                    return "Пожалуйста, введите на" + character(input.length - max) + " меньше";
+                },
+                formatSelectionTooBig: function (limit) {
+                    return "Вы можете выбрать не более " + limit + " элемент" + (limit % 10 == 1 &amp;&amp; limit % 100 != 11 ? "а" : "ов");
+                },
+                formatLoadMore: function (pageNumber) {
+                    return "Загрузка данных…";
+                },
+                formatSearching: function () {
+                    return "Поиск…";
+                }
+            };
+
+            $.extend($.fn.select2.defaults, $.fn.select2.locales['ru']);
+
+            function character(n) {
+                return " " + n + " символ" + (n % 10 &lt; 5 &amp;&amp; n % 10 &gt; 0 &amp;&amp; (n % 100 &lt; 5 || n % 100 &gt; 20) ? n % 10 &gt; 1 ? "a" : "" : "ов");
+            }
+        })(jQuery);
+
+        function onChangeSelect(changeElemId, blockname) {
+            $(document).on('change', changeElemId, function () {
+                var that = $(this);
+                $.ajax({
+                    url: '/caterer/app/dish//save-ingredient-ajax',
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                        'idIngredient': that.val(),
+                        'idDish': '94'
+                    },
+                    async: true,
+                    success: function (data) {
+                        moveHtml(that.parent(), blockname, data, that.val());
+                    }
+                });
+
+                return false;
+            });
+        }
+
+        function moveHtml(parentBlock, catBlock, returnData, value) {
+            var selectChoiseUl = parentBlock.find('.select2-choices');
+            var hiddenElem = selectChoiseUl.find('li.select2-search-choice');
+            var nevList = '';
+
+            if (value) {
+                parentBlock.find("select option[value=" + value + "]").remove();
+            }
+
+            $.each(hiddenElem, function (index, value) {
+                $(value).remove();
+            });
+
+            parentBlock.find('#' + catBlock).remove();
+
+            $.each(returnData, function (id, val) {
+                nevList += '&lt;li class="select2-search-choice"&gt;' + val['name'] + ' &lt;a class="fa fa-trash" href="javaScript:void(0)" tabindex="-1" onclick="delDishInMenu(' + val['id'] + ', $(this).parent(), ' + catBlock + ')"&gt;&lt;/a&gt;&lt;/li&gt;';
+            });
+
+            if (nevList) {
+                var newHtmlString = '&lt;ol id="' + catBlock + '" class="select2-search-choice"&gt;';
+                newHtmlString += nevList;
+                newHtmlString += '&lt;/ol&gt;';
+                parentBlock.append(newHtmlString);
+            }
+        }
+
+        function delDishInMenu(ingrId, delElem, catBlock) {
+            delElem.remove();
+            var selectArr = $("#s5a1e7e4baeb32_ingredients_1");
+            $.each(selectArr, function (index, select) {
+                var option = document.createElement("option");
+                option.text = delElem.text();
+                option.value = ingrId;
+                select.add(option);
+            });
+
+            $.ajax({
+                url: '/caterer/app/dish//del-ingredient-ajax',
+                type: "POST",
+                dataType: "json",
+                data: {
+                    'idIngredient': ingrId,
+                    'idDish': '94'
+                },
+                async: true,
+                success: function (data) {
+                    //
+                }
+            });
+        }
+
+        function getDishInMenu(parentBlock) {
+            $.ajax({
+                url: '/caterer/app/dish//get-ingredient-ajax',
+                type: "POST",
+                dataType: "json",
+                data: {
+                    'idDish': '94'
+                },
+                async: true,
+                success: function (data) {
+                    if (data) {
+                        moveHtml(parentBlock, 'first_dish_block', data, null);
+                    }
+                }
+            });
+        }
+
+        function startGetDish() {
+            getDishInMenu($(document).find('#s5a1e7e4baeb32_ingredients_1').parent());
+        }
+
+        $(document).ready(function () {
+            onChangeSelect('#s5a1e7e4baeb32_ingredients_1', 'first_dish_block');
+            startGetDish();
+
+            $('#s2id_autogen3').keyup(function (event) {
+                var inputField = $('#s2id_autogen3');
+                var value = inputField.val();
+
+                // ctrl + q
+                if (event.ctrlKey &amp;&amp; event.keyCode == 81) {
+                    if (value.length &lt; 3) {
+                        alert('Вы должны ввести не менее 3 символов');
+                    } else {
+                        var isAdmin = confirm('Создать ингридиент "' + value + '"?');
+                        if (isAdmin) {
+                            $.ajax({
+                                url: '/caterer/app/dish//add-ingredient-ajax',
+                                type: "POST",
+                                dataType: "json",
+                                data: {
+                                    'ingredientName': value,
+                                    'idDish': '94'
+                                },
+                                async: true,
+                                success: function (data) {
+                                    onChangeSelect('#s5a1e7e4baeb32_ingredients_1', 'first_dish_block');
+                                    startGetDish();
+                                }
+                            });
+                            $('#select2-drop-mask').click();
+                        }
+                    }
+                }
+            });
+
+            window.onbeforeunload = function (evt) {
+                var is_data_changed = false;
+                var inputName = $('#s5a1e7e4baeb32_name');
+                var inputPrice = $('#s5a1e7e4baeb32_price');
+
+                if (!inputPrice.val() || inputPrice.val() == 0) {
+                    is_data_changed = true;
+                    inputPrice.css('border-color', '#bc3c3c');
+                    if (!inputName.val()) {
+                        inputName.css('border-color', '#bc3c3c');
+                    }
+                } else if (!inputName.val()) {
+                    is_data_changed = true;
+                    inputName.css('border-color', '#bc3c3c');
+                }
+
+                return (is_data_changed ? "Измененные данные не сохранены. Закрыть страницу?" : null);
+            };
+
+        });
+    </script>
+
+
+        <title>
+                    Администрирование
+
+                            Редактировать ""
+                            </title>
+    </head>
+    <body class="sonata-bc skin-black fixed" style="height: auto;">
+
+    <div class="wrapper" style="height: auto;">
+
+                    <header class="main-header">
+                                    <noscript>
+                        &lt;div class="noscript-warning"&gt;
+                            В вашем браузере отключен Javascipt. Некоторые функции сайта будут недоступны.
+                        &lt;/div&gt;
+                    </noscript>
+                                                    <a href="/caterer/dashboard" class="logo"><img alt="Caterer Admin" src="/bundles/sonataadmin/logo_title.png" /><span>Caterer Admin</span></a>                                                    <nav role="navigation" class="navbar navbar-static-top">
+                        <a role="button" data-toggle="offcanvas" class="sidebar-toggle" href="#">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+
+                        <div class="navbar-left">
+                                                            <div class="hidden-xs">
+                                                                            <ol class="nav navbar-top-links breadcrumb">
+                                                                                                                                                                                                            <li>
+                                                                                                                                    <a href="/caterer/dashboard">
+                                                                        <i class="fa fa-home"></i>                                                                    </a>
+                                                                                                                            </li>
+                                                                                                                                                                        <li>
+                                                                                                                                    <a href="/caterer/app/dish/list">
+                                                                        Список блюд                                                                    </a>
+                                                                                                                            </li>
+                                                                                                                                                                        <li class="active"><span></span></li>
+                                                                                                                                                                                                                                                </ol>
+                                                                    </div>
+                                                    </div>
+
+                                                                                    <div class="navbar-custom-menu">
+                                    <ul class="nav navbar-nav">
+                                            <li>
+        <a href="/caterer/app/comment/list" class="dropdown-toggle">
+            <i aria-hidden="true" class="fa fa-commenting"></i> 6
+        </a>
+    </li>
+                                                <li class="dropdown">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                    <i aria-hidden="true" class="fa fa-plus-square fa-fw"></i> <i aria-hidden="true" class="fa fa-caret-down"></i>
+                                                </a>
+                                                        
+            
+                                                                                    
+                                                                                    
+                                                                                    
+                                        
+                                
+    
+    <div style="width: 280px;" class="dropdown-menu multi-column dropdown-add">
+                                
+            
+                                                            <div class="container-fluid">
+                            <div class="row">
+                    
+                    <ul class="dropdown-menu col-md-6">
+                
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Ингредиенты
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/ingredient/create" tabindex="-1" role="menuitem">Ингредиенты</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                
+                                    <li class="divider" role="presentation"></li>
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Блюда
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/dish/create" tabindex="-1" role="menuitem">Блюда</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                                                            </ul>
+                    
+                    <ul class="dropdown-menu col-md-6">
+                
+                                <li class="dropdown-header" role="presentation">
+                    <i class="fa fa-folder"></i>
+                    Комплексные Обеды
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a href="/caterer/app/complexdish/create" tabindex="-1" role="menuitem">Комплексные блюда</a>
+                            </li>
+                                                            
+                                            </ul>
+                        </div>
+                    </div>
+                
+                        </div>
+                                            </li>
+                                        
+                                                                                    <li class="dropdown user-menu">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                                    <i aria-hidden="true" class="fa fa-user fa-fw"></i> <i aria-hidden="true" class="fa fa-caret-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-user">
+                                                    <li><a href="/logout">Выход</a></li>
+                                                </ul>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                                                        </nav>
+                            </header>
+        
+                                    <aside class="main-sidebar">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 921px;"><section class="sidebar" style="height: 921px; overflow: hidden; width: auto;">
+                            
+    
+                             <ul class="sidebar-menu">
+                            
+                <li class="first">            <a href="/caterer/app/ingredient/list"><i class="fa fa-folder"></i>Ингредиенты</a>        
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/app/dish/list"><i class="fa fa-folder"></i>Блюда</a>        
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/app/complexdish/list"><i class="fa fa-folder"></i>Комплексные Обеды</a>        
+    </li>
+
+    
+                    
+                                    <li class="treeview">            <a href="#"><i class="fa fa-folder"></i><span>Меню</span><span class="pull-right-container"><i class="fa pull-right fa-angle-left"></i></span></a>                <ul class="active treeview-menu menu_level_1">
+                            
+                <li class="first last">            <a href="/caterer/app/menu/today/edit-menu"><i aria-hidden="true" class="fa fa-angle-double-right"></i>Меню</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+                    
+                <li>            <a href="/caterer/report"><i class="fa fa-folder"></i>Отчеты</a>        
+    </li>
+
+    
+                    
+                <li class="last">            <a href="/caterer/app/comment/list"><i class="fa fa-folder"></i>Комментарии</a>        
+    </li>
+
+    
+
+    </ul>
+
+                <span class="welcome_caterer">Добро пожаловать, Обеды от Веры</span>
+                        </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%; width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 921px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                </aside>
+            
+            <div class="content-wrapper" style="min-height: 971px;">
+                                    <section class="content-header">
+
+                                                                                                                        <div class="sticky-wrapper"><nav role="navigation" class="navbar navbar-default">
+                                        <div class="container-fluid">
+                                                                                                                                                <div class="navbar-header">
+                                                        <a href="#" class="navbar-brand">Редактировать ""</a>
+                                                    </div>
+                                                                                            
+                                            <div class="navbar-collapse">
+                                                
+                                                
+                                                                                                                                                            <ul class="nav navbar-nav navbar-right">
+                                                                                                                    <li class="dropdown sonata-actions">
+                                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Действия <b class="caret"></b></a>
+                                                                <ul role="menu" class="dropdown-menu">
+                                                                    <li><a href="/caterer/app/dish/create" class="sonata-action-element"><i aria-hidden="true" class="fa fa-plus-circle"></i>
+                Добавить новый
+            </a></li><li><a href="/caterer/app/dish/list" class="sonata-action-element"><i aria-hidden="true" class="fa fa-list"></i>
+            Вернуться к списку
+        </a></li>
+                                                                </ul>
+                                                            </li>
+                                                                                                                </ul>
+                                                                                                    
+                                                                                            </div>
+                                        </div>
+                                    </nav></div>
+                                                                                                        </section>
+
+                    <section class="content">
+                        
+                                                                                                                
+                            
+                            
+                            
+                                                            <div class="sonata-ba-form"><form method="POST" enctype="multipart/form-data" action="/caterer/app/dish/94/edit?uniqid=s5a1e7e4baeb32" role="form" data-original="s5a1e7e4baeb32%5Bname%5D=&amp;s5a1e7e4baeb32%5Bdescription%5D=&amp;s5a1e7e4baeb32%5Bweight%5D=&amp;s5a1e7e4baeb32%5Bunits%5D=&amp;s5a1e7e4baeb32%5Bcategory%5D=1&amp;s5a1e7e4baeb32%5Bprice%5D=0&amp;s5a1e7e4baeb32%5B_token%5D=Uq0JuCyALfd0ciDzmNfQY35Tw1pC678JlXBmdQdlQLo">
+
+            
+
+                            <div class="row">
+            
+                            
+                <div class="col-md-12">
+                                                <div class="row">
+
+            
+        <div class="col-md-6">
+            <div class="box box-solid box-primary">
+                <div class="box-header">
+                    <h4 class="box-title">
+                        Информация о блюде
+                    </h4>
+                </div>
+                <div class="box-body">
+                    <div class="sonata-ba-collapsed-fields">
+                        
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_name" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_name" class="control-label required">
+                            Имя
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                                    <input type="text" class=" form-control" required="required" name="s5a1e7e4baeb32[name]" id="s5a1e7e4baeb32_name" />
+
+     
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_description" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_description" class=" control-label">
+                            Описание
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                                    <input type="text" class=" form-control" name="s5a1e7e4baeb32[description]" id="s5a1e7e4baeb32_description" />
+
+     
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_weight" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_weight" class=" control-label">
+                            Вес / Количество
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                                    <input type="number" class=" form-control" name="s5a1e7e4baeb32[weight]" id="s5a1e7e4baeb32_weight" />
+ 
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_units" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_units" class=" control-label">
+                            Единицы измерения
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+            <div class="select2-container" id="s2id_s5a1e7e4baeb32_units" style="width: 100%;"><a tabindex="-1" class="select2-choice" href="javascript:void(0)">   <span class="select2-chosen" id="select2-chosen-1">Выберите единицы измерения</span><abbr class="select2-search-choice-close"></abbr>   <span role="presentation" class="select2-arrow"><b role="presentation"></b></span></a><label class="select2-offscreen" for="s2id_autogen1">
+                            Единицы измерения
+                    </label><input type="text" role="button" aria-haspopup="true" class="select2-focusser select2-offscreen" aria-labelledby="select2-chosen-1" id="s2id_autogen1" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label class="select2-offscreen" for="s2id_autogen1_search">
+                            Единицы измерения
+                    </label>       <input type="text" aria-autocomplete="list" aria-expanded="true" role="combobox" class="select2-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="" />   </div>   <ul role="listbox" class="select2-results" id="select2-results-1">   </ul></div></div><select class="" name="s5a1e7e4baeb32[units]" id="s5a1e7e4baeb32_units" tabindex="-1" title="
+                            Единицы измерения
+                    " style="display: none;"><option selected="selected" value="">Выберите единицы измерения</option><option value="Гр">гр</option><option value="Шт">шт</option><option value="Мл">мл</option></select> 
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_category" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_category" class="control-label required">
+                            Категория
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+            <div class="select2-container" id="s2id_s5a1e7e4baeb32_category" style="width: 100%;"><a tabindex="-1" class="select2-choice" href="javascript:void(0)">   <span class="select2-chosen" id="select2-chosen-2">Вторые блюда</span><abbr class="select2-search-choice-close"></abbr>   <span role="presentation" class="select2-arrow"><b role="presentation"></b></span></a><label class="select2-offscreen" for="s2id_autogen2">
+                            Категория
+                    </label><input type="text" role="button" aria-haspopup="true" class="select2-focusser select2-offscreen" aria-labelledby="select2-chosen-2" id="s2id_autogen2" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label class="select2-offscreen" for="s2id_autogen2_search">
+                            Категория
+                    </label>       <input type="text" aria-autocomplete="list" aria-expanded="true" role="combobox" class="select2-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="" />   </div>   <ul role="listbox" class="select2-results" id="select2-results-2">   </ul></div></div><select class="" name="s5a1e7e4baeb32[category]" id="s5a1e7e4baeb32_category" tabindex="-1" title="
+                            Категория
+                    " style="display: none;"><option value="1">Вторые блюда</option><option value="2">Гарниры</option><option value="3">Комплексные обеды</option><option value="4">Первые блюда</option><option value="5">Салаты</option><option value="6">Десерты</option><option value="10">Напитки</option><option value="30">Второе1</option></select> 
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_price" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_price" class="control-label required">
+                            Цена
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                                        <div class="input-group">                        <input type="text" value="0" class=" form-control" required="required" name="s5a1e7e4baeb32[price]" id="s5a1e7e4baeb32_price" />
+<span class="input-group-addon">₴</span>
+            </div>
+             
+            
+                    </div>
+    </div>
+
+                                            </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <div class="box box-solid box-primary">
+                <div class="box-header">
+                    <h4 class="box-title">
+                        Ингредиенты и тэги
+                    </h4>
+                </div>
+                <div class="box-body">
+                    <div class="sonata-ba-collapsed-fields">
+                        
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_ingredients_1" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_ingredients_1" class=" control-label">
+                            Ингредиенты
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+            <div class="select2-container select2-container-multi" id="s2id_s5a1e7e4baeb32_ingredients_1" style="width: 100%;"><ul class="select2-choices">  <li class="select2-search-field">    <label class="select2-offscreen" for="s2id_autogen3">
+                            Ингредиенты
+                    </label>    <input type="text" class="select2-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" id="s2id_autogen3" style="width: 34px;" placeholder="" />  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">Совпадений не найдено, нажмите ctrl + q для создания ингридиента.</li></ul></div></div><select multiple="multiple" class="" name="s5a1e7e4baeb32[ingredients_1][]" id="s5a1e7e4baeb32_ingredients_1" tabindex="-1" style="display: none;"><option value="68">rfgecnf8888</option><option value="23">ананасы</option><option value="18">базилик</option><option value="54">бекон</option><option value="32">буряк</option><option value="49">ветчина</option><option value="69">вода</option><option value="35">говядина</option><option value="33">горох</option><option value="36">грибы</option><option value="14">зелень</option><option value="27">изюм</option><option value="45">кальмары</option><option value="50">каперсы</option><option value="16">капуста</option><option value="10">картофель</option><option value="19">каша пшеничная</option><option value="52">колбаса</option><option value="48">копчености</option><option value="71">кориандр</option><option value="67">корица</option><option value="56">крабовые палочки</option><option value="44">креветки</option><option value="57">кукуруза</option><option value="9">куринное филе</option><option value="17">листья салата</option><option value="20">лук зеленый</option><option value="21">майонез</option><option value="5">макароны</option><option value="3">масло</option><option value="1">молоко</option><option value="11">морковь</option><option value="2">Мука</option><option value="8">мяско</option><option value="15">огурец</option><option value="59">орехи</option><option value="72">особая специя</option><option value="38">пекинская капуста</option><option value="70">перец Чили</option><option value="62">петрушка+</option><option value="7">помидоры</option><option value="41">рис</option><option value="30">сардины</option><option value="29">сахар</option><option value="40">свинина</option><option value="31">семга</option><option value="39">сладкий перец</option><option value="47">сливки</option><option value="13">сметана</option><option value="34">соленые огурцы</option><option value="4">соль</option><option value="42">спаржа</option><option value="37">специи</option><option value="46">сухарики</option><option value="6">сыр</option><option value="26">творог</option><option value="24">телятина</option><option value="51">томатная паста</option><option value="60">торт</option><option value="66">укропчик</option><option value="64">усилитель вкуса</option><option value="65">усилитель цвета</option><option value="53">цветная капуста</option><option value="58">чернослив</option><option value="43">чеснок</option><option value="25">шампиньоны</option><option value="55">шпинатъ</option><option value="12">яйцо</option></select> 
+            
+                    </div>
+    </div>
+
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_tags" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_tags" class=" control-label">
+                            Тэги
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+            <div class="select2-container select2-container-multi" id="s2id_s5a1e7e4baeb32_tags" style="width: 100%;"><ul class="select2-choices">  <li class="select2-search-field">    <label class="select2-offscreen" for="s2id_autogen4">
+                            Тэги
+                    </label>    <input type="text" class="select2-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" id="s2id_autogen4" style="width: 34px;" placeholder="" />  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">Совпадений не найдено.</li></ul></div></div><select multiple="multiple" class="" name="s5a1e7e4baeb32[tags][]" id="s5a1e7e4baeb32_tags" tabindex="-1" style="display: none;"><option value="4">Tag1*</option><option value="5">Tag2*</option><option value="6">Tag3*</option><option value="3">Third</option><option value="2">Второй ТЭГ</option><option value="1">Первый ТЭГ</option></select> 
+            
+                    </div>
+    </div>
+
+                                            </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-md-6">
+            <div class="box box-solid box-primary">
+                <div class="box-header">
+                    <h4 class="box-title">
+                        Загрузка фотографии
+                    </h4>
+                </div>
+                <div class="box-body">
+                    <div class="sonata-ba-collapsed-fields">
+                        
+                                                            <div id="sonata-ba-field-container-s5a1e7e4baeb32_imageUploads" class="form-group">
+                            
+        
+        
+        
+                    <label for="s5a1e7e4baeb32_imageUploads" class=" control-label">
+                            Загрузка изображений (5М, jpeg, png)
+                    </label>
+        
+                            
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                        <input type="file" class="" name="s5a1e7e4baeb32[imageUploads]" id="s5a1e7e4baeb32_imageUploads" />
+
+     
+            
+                    </div>
+    </div>
+
+                                            </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+                                    </div>
+            
+                            </div>
+            
+                                    <input type="hidden" value="Uq0JuCyALfd0ciDzmNfQY35Tw1pC678JlXBmdQdlQLo" class=" form-control" name="s5a1e7e4baeb32[_token]" id="s5a1e7e4baeb32__token" />
+
+    
+
+                            <div class="sonata-ba-form-actions well well-small form-actions">
+                                                                                                                                        <button name="btn_update_and_edit" class="btn btn-success" type="submit"><i aria-hidden="true" class="fa fa-save"></i> Сохранить</button>
+
+                                                            <button name="btn_update_and_list" class="btn btn-success" type="submit"><i class="fa fa-save"></i> <i aria-hidden="true" class="fa fa-list"></i> Сохранить и вернуться к списку</button>
+                            
+                                                            или
+                                <a href="/caterer/app/dish/94/delete" class="btn btn-danger"><i aria-hidden="true" class="fa fa-minus-circle"></i> Удалить</a>
+                            
+                                                                                                        </div>
+                    </form></div>
+                            
+                            
+                                                                        </section>
+                            </div>
+            </div>
+
+    
+    
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span></body></html>

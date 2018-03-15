@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en" name="language" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="/assets/style-fQ5boRRHBqNzcjT2dj57xw.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+/*&lt;![CDATA[*/
+
+             .pace {
+                  -webkit-pointer-events: none;
+                  pointer-events: none;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  user-select: none;
+                }
+                
+                .pace-inactive {
+                  display: none;
+                }
+                
+                .pace .pace-progress {
+                  background: #86929B;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 0;
+                  right: 100%;
+                  width: 100%;
+                  height: 3px;
+                }
+                
+                .pace .pace-progress-inner {
+                  display: block;
+                  position: absolute;
+                  right: 0px;
+                  width: 100px;
+                  height: 100%;
+                  box-shadow: 0 0 10px #86929B, 0 0 5px #86929B;
+                  opacity: 1.0;
+                  -webkit-transform: rotate(3deg) translate(0px, -4px);
+                  -moz-transform: rotate(3deg) translate(0px, -4px);
+                  -ms-transform: rotate(3deg) translate(0px, -4px);
+                  -o-transform: rotate(3deg) translate(0px, -4px);
+                  transform: rotate(3deg) translate(0px, -4px);
+                }
+                
+                .pace .pace-activity {
+                  display: block;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 15px;
+                  left: 15px;
+                  width: 14px;
+                  height: 14px;
+                  border: solid 2px transparent;
+                  border-top-color: #86929B;
+                  border-left-color: #86929B;
+                  border-radius: 10px;
+                  -webkit-animation: pace-spinner 400ms linear infinite;
+                  -moz-animation: pace-spinner 400ms linear infinite;
+                  -ms-animation: pace-spinner 400ms linear infinite;
+                  -o-animation: pace-spinner 400ms linear infinite;
+                  animation: pace-spinner 400ms linear infinite;
+                }
+                
+                @-webkit-keyframes pace-spinner {
+                  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-moz-keyframes pace-spinner {
+                  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-o-keyframes pace-spinner {
+                  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-ms-keyframes pace-spinner {
+                  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @keyframes pace-spinner {
+                  0% { transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                 
+        
+/*]]&gt;*/
+</style>
+<title>SystemHUB - Create Member</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+    <link type="image/x-icon" href="/favicon.ico" rel="icon" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,700,400italic,700italic,300italic%7CLato:400,400italic,300,300italic,700,700italic%7CRoboto:400,300,300italic,400italic,700,700italic%7CDosis:400,300,300italic,400italic,700,700italic&amp;subset=latin,cyrillic,cyrillic-ext,latin-ext" />
+    </head>
+<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<header class="header">
+    <div class="container">
+        <nav class="header-content navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://master.systemhub.com/admin/company/admin" class="navbar-brand">
+                        <img width="200" height="50" src="/resources/images/logo.png" alt="logo" />                    </a>
+                </div>
+                <div class="collapse navbar-collapse closed">
+                    <ul class="nav navbar-nav user-nav navbar-right">
+                        <li class="dropdown user-navigation btn-group">
+                            <div class="dropdown">
+    <button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="userDropdownMenu" class="btn btn-primary dropdown-toggle">
+        <img alt="" src="/assets/easyimage/f/f9c8d36b1b9dd1e16457653bc34dc765.jpg?t=1501458320" class="avatar valign-middle" />    </button>
+    <ul aria-labelledby="userDropdownMenu" class="dropdown-menu">
+        <li>
+            <a href="https://master.systemhub.com/admin/member/profile/id/1" class="js-page-loading profile">Profile</a>        </li>
+        <li>
+            <a href="https://master.systemhub.com/admin/member/admin" class="js-page-loading settings">Team</a>        </li>
+        <li>
+            <a href="http://help.systemhub.com" target="_blank">Help</a>        </li>
+        <li>
+            <a href="/auth/webUser/logout" class="js-page-loading logout">Logout</a>        </li>
+    </ul>
+</div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left link-system">
+                                                    <li>
+                                <a href="https://master.systemhub.com/admin/company/admin" class="btn btn-primary btn-block admin js-page-loading">Admin</a>                            </li>
+                                                                            <li>
+                                <a href="https://master.systemhub.com/admin/master/systemFolder/view" class="btn btn-primary btn-block master-templates js-page-loading">Master Templates</a>                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+           <div class="member-create layouts-column2 row">
+    <div class="two-left col-md-3">
+        <div class="panel panel-default member-profile-navigate sidebar-navigation" id="left-sidebar">
+    <div class="panel-heading">
+        <h2 class="panel-title"><span aria-hidden="true" class="glyphicon glyphicon-cog"></span>Profile<span id="close-left-sidebar">✕</span></h2>
+    </div>
+    <div class="panel-body">
+        <ul id="yw0" class="list-group">
+<li class="personal-info"><a href="/admin/member/profile/id/1" class="js-page-loading list-group-item"><span class="glyphicon glyphicon-info-sign"></span>Personal information</a></li>
+<li class="team"><a href="/admin/member/admin" class="js-page-loading list-group-item"><span class="glyphicon glyphicon-user"></span>Team</a></li>
+</ul>    </div>
+</div>
+    </div>
+    <div class="two-right col-md-9">
+        <div id="content">
+            <div class="member-update panel panel-default">
+                <div class="panel-heading">
+                    <ul class="icons-left">
+                        <li class="navigation">
+                            <span aria-hidden="true" class="glyphicon glyphicon-cog" id="left-sidebar-menu-trigger"></span>
+                        </li>
+                    </ul>
+                    <h2 class="panel-title"><span aria-hidden="true" class="glyphicon glyphicon-info-sign"></span>Personal
+                        information</h2>
+                </div>
+                <div class="panel-body">
+                    <form method="post" action="/admin/member/create" id="member-create-form" autocomplete="off" enctype="multipart/form-data">                    <div class="profile-info row">
+                        <div class="profile-avatar col-md-4">
+                            <div class="section-row avatar-row"><img src="https://master.systemhub.com/uploads/temp/feature2_2.JPG" class="afterUploadPreview js-image" /></div>
+                            <div class="section-row">
+                                150 x 150 pixels
+                            </div>
+                            <div class="section-row">
+                                <span class="cococod" id="cocowidget1" style="width: 300px;">
+<!-- The fileinput-button span is used to style the file input field as button -->
+<span class="btn btn-success fileinput-button dropzone">
+    <i class="glyphicon glyphicon-plus"></i>
+    <span class="button-wrap">Upload file</span>
+    <!-- The file input field used as target for the file upload widget -->
+    <input type="file" multiple="" name="files[]" class="fileupload" />
+</span>
+<!-- The global progress bar -->
+<div class="progress" style="display: none;">
+    <div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+</div>
+<!-- The container for the uploaded files -->
+<div class="files"><p class="success">feature2_2.JPG - Done.</p></div>
+</span>
+                            </div>
+                            <div class="section-row">
+                                <a href="https://master.systemhub.com/admin/member/admin" style="display:none;" class="btn btn-default js-crop-image">Crop image</a>                            </div>
+                        </div>
+                        <div class="profile-edit col-md-8">
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label class="required" for="application_models_MemberModel_firstName">First Name <span class="required">*</span></label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_firstName_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="text" maxlength="100" id="application_models_MemberModel_firstName" name="application_models_MemberModel[firstName]" class="form-control" />                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label class="required" for="application_models_MemberModel_lastName">Last Name <span class="required">*</span></label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_lastName_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="text" maxlength="100" id="application_models_MemberModel_lastName" name="application_models_MemberModel[lastName]" class="form-control" />                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label class="required" for="application_models_MemberModel_email">E-mail <span class="required">*</span></label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_email_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="email" id="application_models_MemberModel_email" name="application_models_MemberModel[email]" class="form-control" />                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label for="application_models_MemberModel_position">Position</label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_position_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="text" maxlength="100" id="application_models_MemberModel_position" name="application_models_MemberModel[position]" class="form-control" />                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label for="application_models_MemberModel_positionDescription">Position Description</label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_positionDescription_em_" class="errorMessage"></div>                                    </div>
+                                    <textarea id="application_models_MemberModel_positionDescription" name="application_models_MemberModel[positionDescription]" class="form-control"></textarea>                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label class="required" for="application_models_MemberModel_password">Password <span class="required">*</span></label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_password_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="password" id="application_models_MemberModel_password" name="application_models_MemberModel[password]" class="form-control" />                                </div>
+                            </div>
+                            <div class="section-row">
+                                <div class="section-label">
+                                    <label class="required" for="application_models_MemberModel_confirm">Confirm Password <span class="required">*</span></label>                                </div>
+                                <div class="section-input">
+                                    <div class="errors-holder">
+                                        <div style="display:none" id="application_models_MemberModel_confirm_em_" class="errorMessage"></div>                                    </div>
+                                    <input type="password" id="application_models_MemberModel_confirm" name="application_models_MemberModel[confirm]" class="form-control" />                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-row buttons">
+                        <button value="Create" name="DHtml5980408c03c54" type="submit" id="submit-button" class="btn btn-primary disabled buttonIsLoading"><span style="margin-right: 5px;" class="buttonLoaderHolder"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span></span>Create</button>                        <a href="https://master.systemhub.com/admin/member/admin" class="btn btn-default cancel js-page-loading">Cancel</a>                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="crop-image" role="dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Crop image</h4>
+            </div>
+            <div class="modal-body">        <div class="form-body">
+                <div style="position:relative; text-align: center" id="crop-block">
+                        <img class="js-crop" />
+                </div>
+        </div>
+            <div class="section-row buttons">
+                <button value="Apply" name="DHtml5980408c0404c" type="submit" class="yes btn btn-primary dialog-close js-save-crop">Apply</button>                <input type="button" value="Cancel" name="yt0" data-dismiss="modal" class="btn btn-default cancel-button js-cancel-crop" />            </div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="copyright valign-middle">
+            © 2017 Copyright systemHUB
+        </div>
+    </div>
+</footer>
+    <script src="/assets/script-2-dlazGwLi1rElN2u5oTswpw.js?1501163621" type="text/javascript"></script>
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+   
+                if (window.innerWidth &lt; 990) {
+                    $('#left-sidebar-menu-trigger, #close-left-sidebar').sidr({
+                        name: 'mobile-left-sidebar-menu',
+                        side: 'left',
+                        onOpen: function() {
+                            if (!$('#mobile-left-sidebar-menu').data('hasContent')) {
+                                $('#mobile-left-sidebar-menu').html($('#left-sidebar')).data('hasContent', true);
+                            }
+                        },
+                    });
+                }
+            
+    
+              
+              var uploadedFileName = '';
+              
+                $(document).find('#crop-image').on('shown.bs.modal', function () {
+                    
+                    var baseHeight = 150;
+                    var baseWidth = 150;
+                    var img = $(this).find('.js-crop'); 
+                    var currentHeight = img.height();
+                    var currentWidth = img.width();
+                    
+                    while ((currentHeight &lt; baseHeight || currentWidth &lt; baseWidth)) {
+                        if (currentWidth &lt; baseHeight || currentHeight &lt; baseWidth) {
+                            baseWidth = baseWidth / 2;
+                            baseHeight = baseHeight / 2;
+                        }                        
+                        console.log(baseHeight, baseWidth, currentHeight, currentWidth);
+                    }
+                    
+                   
+                    $('.js-crop').imgAreaSelect({
+                        x1: 0,
+                        y1: 0,
+                        y2: baseHeight,
+                        x2: baseWidth,
+                        handles: true,
+                        
+                        //minWidth: 150, 
+                        //minHeight: 150,
+                        aspectRatio: "1:1",
+                        
+                        allowResize: false,
+                        onInit: getCoordinates,
+                        onSelectChange: getCoordinates,
+                        
+                        parent: '#crop-block'
+                    });
+                });
+              
+              function showCropModal()
+                {
+                    cropBlock = $(document).find('.js-crop');
+                    if (cropBlock.length == 1) {
+                        cropBlock.attr('src', $(document).find('.js-image').attr('src'));                       
+                        $('#crop-image').modal('show');                       
+                    }
+                }
+      
+            var cropData = { 'x':0, 'y':0, 'width':150, 'height':150, 'fileName': uploadedFileName };
+            function getCoordinates(img, selection) {
+                if (!selection.width || !selection.height){
+                    return;
+                }
+
+                // With this two lines i take the proportion between the original size and
+                // the resized img
+                var porcX = img.naturalWidth / img.width;
+                var porcY = img.naturalHeight / img.height;
+                
+                cropData = {
+                x: Math.round(selection.x1 * porcX), 
+                y: Math.round(selection.y1 * porcY), 
+                width: Math.round(selection.width * porcX), 
+                height: Math.round(selection.height * porcY), 
+                fileName: uploadedFileName
+                };               
+            }
+        
+            $(document).on('click', '.js-save-crop', function() {
+                $.ajax({
+                    method: "POST",
+                    data: { cropData: cropData }
+                })
+                .done(function(data) {
+                    result = $.parseJSON(data);
+                    $(document).find('.js-image').attr('src', result.fileName);
+                    $(document).find("#crop-image").modal("hide");
+                    $(document).find('.js-crop').imgAreaSelect({remove:true});
+                });
+            });            
+            
+            $(document).on('click', '.js-cancel-crop', function() {
+                 $(document).find("#crop-image").modal("hide");
+                 $(document).find('.js-crop').imgAreaSelect({remove:true});
+            });
+                      
+            $(document).on('click', '.js-crop-image', function(e) {
+                showCropModal();
+                return false;
+            });
+            
+            $('#crop-image').on('hidden.bs.modal', function () {
+                $(document).find('.js-crop').imgAreaSelect({remove:true});
+            })
+            
+$.fn.notifyWidget('init', {'notifySettings':[]});
+jQuery(function($) {
+	
+	            if (typeof localStorage === 'object') {
+	                try {
+	                    localStorage.setItem('localStorage', 1);
+	                    localStorage.removeItem('localStorage');
+	                } catch (e) {
+	                    Storage.prototype._setItem = Storage.prototype.setItem;
+	                    Storage.prototype.setItem = function() {};
+	                    console.log('Your web browser does not support storing settings locally. In Safari, the most common cause of this is using "Private Browsing Mode". Some settings may not save or some features may not work properly for you.');
+	                }
+	            }
+	        
+	
+	    $(function () {
+	        'use strict';
+	        $('#cocowidget1 .fileupload').fileupload(
+	            {'dataType':'json','acceptFileTypes': /(\.|\/)(jpeg|jpg|gif|png)$/i,'maxFileSize':5000000,'minFileSize':null,'maxNumberOfFiles':'','dropZone':'#cocowidget1 .dropzone','messages':{'maxNumberOfFiles':'Maximum number of files exceeded','acceptFileTypes':'File type not allowed','maxFileSize':'File is too large','minFileSize':'File is too small'},'pasteZone':null,'url':'https://master.systemhub.com/company/member/cocoCodCreate/?id=&amp;action=upload&amp;data=80162a5bb3f48c2b904703b398baa1f4'}        ).on('fileuploadprocessalways', function (e, data) {
+	            var index = data.index,
+	                    file = data.files[index],
+	                    node = $('#cocowidget1 .files');
+	            if (file.error) {
+	                node.append($('&lt;p class="text-danger"/&gt;').text(file.name + ' - ' + file.error));
+	            }
+	        }).on('fileuploadprogressall', function (e, data) {
+	            $('#cocowidget1 .progress').show('fast');
+	            var progress = parseInt(data.loaded / data.total * 100, 10);
+	            $('#cocowidget1 .progress .progress-bar').css(
+	                    'width',
+	                    progress + '%'
+	                    );
+	        }).on('fileuploaddone', function (e, data) {
+	            $.each(data.result.files, function (index, file) {
+	                var node = $('#cocowidget1 .files');
+	                if (file.error) {
+	                    node.append($('&lt;p class="text-danger"/&gt;').text(file.name + ' - ' + file.error));
+	                } else {
+	                    node.append($('&lt;p class="success"/&gt;').text(file.name + ' - Done.'));
+	                }
+	            });
+	        }).on('fileuploadfail', function (e, data) {
+	            var node = $('#cocowidget1 .files');
+	            $.each(data.files, function (index, file) {
+	                node.append($('&lt;p class="text-danger"/&gt;').text(file.name + ' - File upload failed.'));
+	            });
+	        }).prop('disabled', !$.support.fileInput)
+	                .parent().addClass($.support.fileInput ? undefined : 'disabled');
+	
+	                    $('#cocowidget1 .fileupload').on('fileuploaddone',  function(e, data){
+	                                        $("#application_models_MemberModel_avatar").val(data.files[0].name); $("div.avatar-row").html("&lt;img class='afterUploadPreview js-image' src='https://master.systemhub.com/uploads/temp/"+data.result.files[0].name+ "'&gt;");
+	                                        uploadedFileName = data.result.files[0].name;
+	                                        $(".progress").css({"display":"none"});
+	                                        $(".progress-bar.progress-bar-success").css({"width":"0%"});
+	                                    });
+	                    $('#cocowidget1 .fileupload').on('fileuploadfail',  function(e, data){                            
+	                                    });
+	                    $('#cocowidget1 .fileupload').on('fileuploadstop', function (e) {                            
+	                                    });
+	        
+	        // Enable iframe cross-domain access via redirect option:
+	        // @todo Need implemente normal callback
+	//        $('#cocowidget1 .fileupload').fileupload(
+	//                'option',
+	//                'redirect',
+	//                        'https://master.systemhub.com/assets/c478421a/result.html'                        
+	//                );
+	    });
+	
+	    /**
+	     * Drag&amp;Drop effect
+	     */
+	    $(document).on('dragover', function (e) {
+	        var dropZone = $('#cocowidget1 .dropzone'),
+	                dropText = 'Drop here',
+	                selectText = 'Upload file',
+	                foundDropzone,
+	                timeout = window.dropZoneTimeout;
+	        if (!timeout)
+	        {
+	            dropZone.addClass('in');
+	            dropZone.children('.button-wrap').text(dropText);
+	        }
+	        else
+	        {
+	            clearTimeout(timeout);
+	        }
+	        var found = false,
+	                node = e.target;
+	        do {
+	
+	            if ($(node).hasClass('dropzone'))
+	            {
+	                found = true;
+	                foundDropzone = $(node);
+	                break;
+	            }
+	
+	            node = node.parentNode;
+	        } while (node != null);
+	        dropZone.removeClass('in hover');
+	        dropZone.children('.button-wrap').text(selectText);
+	        if (found)
+	        {
+	            foundDropzone.addClass('hover');
+	            foundDropzone.children('.button-wrap').text(dropText);
+	        }
+	    }).on('drop', '#cocowidget1 .dropzone', function (e, data) {
+	        var dropZone = $('#cocowidget1 .dropzone'),
+	                selectText = 'Upload file';
+	        dropZone.removeClass('in hover');
+	        dropZone.children('.button-wrap').text(selectText);
+	    });
+	
+	
+	jQuery('#member-create-form').yiiactiveform({'validateOnChange':false,'validateOnSubmit':true,'afterValidate':function(form, data, hasError) { if(hasError) { $(document).trigger("company.member.create.afterValidate", false); } return true; },'errorCssClass':'has-error','attributes':[{'id':'application_models_MemberModel_firstName','inputID':'application_models_MemberModel_firstName','errorID':'application_models_MemberModel_firstName_em_','model':'application\\models\\MemberModel','name':'firstName','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("First Name cannot be blank.");
+	}
+	
+	
+	if(jQuery.trim(value)!='') {
+		
+	if(value.length&gt;100) {
+		messages.push("First Name is too long (maximum is 100 characters).");
+	}
+	
+	}
+	
+	}},{'id':'application_models_MemberModel_lastName','inputID':'application_models_MemberModel_lastName','errorID':'application_models_MemberModel_lastName_em_','model':'application\\models\\MemberModel','name':'lastName','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("Last Name cannot be blank.");
+	}
+	
+	
+	if(jQuery.trim(value)!='') {
+		
+	if(value.length&gt;100) {
+		messages.push("Last Name is too long (maximum is 100 characters).");
+	}
+	
+	}
+	
+	}},{'id':'application_models_MemberModel_email','inputID':'application_models_MemberModel_email','errorID':'application_models_MemberModel_email_em_','model':'application\\models\\MemberModel','name':'email','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("E-mail cannot be blank.");
+	}
+	
+	
+	
+	if(jQuery.trim(value)!='' &amp;&amp; !value.match(/^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/)) {
+		messages.push("E-mail is not a valid email address.");
+	}
+	
+	}},{'id':'application_models_MemberModel_position','inputID':'application_models_MemberModel_position','errorID':'application_models_MemberModel_position_em_','model':'application\\models\\MemberModel','name':'position','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)!='') {
+		
+	if(value.length&gt;100) {
+		messages.push("Position is too long (maximum is 100 characters).");
+	}
+	
+	}
+	
+	}},{'id':'application_models_MemberModel_positionDescription','inputID':'application_models_MemberModel_positionDescription','errorID':'application_models_MemberModel_positionDescription_em_','model':'application\\models\\MemberModel','name':'positionDescription','enableAjaxValidation':true},{'id':'application_models_MemberModel_password','inputID':'application_models_MemberModel_password','errorID':'application_models_MemberModel_password_em_','model':'application\\models\\MemberModel','name':'password','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)!='') {
+		
+	if(value.length&lt;6) {
+		messages.push("Password is too short (minimum is 6 characters).");
+	}
+	
+	}
+	
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("Password cannot be blank.");
+	}
+	
+	
+	if(value!=jQuery('#application_models_MemberModel_confirm').val()) {
+		messages.push("Password must be repeated exactly.".replace('{compareValue}', jQuery('#application_models_MemberModel_confirm').val()));
+	}
+	
+	}},{'id':'application_models_MemberModel_confirm','inputID':'application_models_MemberModel_confirm','errorID':'application_models_MemberModel_confirm_em_','model':'application\\models\\MemberModel','name':'confirm','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)!='') {
+		
+	if(value.length&lt;6) {
+		messages.push("Confirm Password is too short (minimum is 6 characters).");
+	}
+	
+	}
+	
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("Confirm Password cannot be blank.");
+	}
+	
+	}}],'errorCss':'error'});
+	$('a[rel="tooltip"]').tooltip();
+	
+	                    $(document).ajaxError(function(event, XHR, ajaxOptions, thrownError) {
+	                        if (XHR.status == 403) {
+	                            $.fn.notifyWidget('notify', {'type': 'danger', 'message': 'You can\'t do this action'});
+	                        }
+	                    });
+	                
+});
+/*]]&gt;*/
+</script>
+
+
+</body></html>

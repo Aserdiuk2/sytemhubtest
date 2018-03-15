@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en" name="language" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="/assets/style-7eT5JF1Ye1IVAaqW47gzlg.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+/*&lt;![CDATA[*/
+
+             .pace {
+                  -webkit-pointer-events: none;
+                  pointer-events: none;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  user-select: none;
+                }
+                
+                .pace-inactive {
+                  display: none;
+                }
+                
+                .pace .pace-progress {
+                  background: #86929B;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 0;
+                  right: 100%;
+                  width: 100%;
+                  height: 3px;
+                }
+                
+                .pace .pace-progress-inner {
+                  display: block;
+                  position: absolute;
+                  right: 0px;
+                  width: 100px;
+                  height: 100%;
+                  box-shadow: 0 0 10px #86929B, 0 0 5px #86929B;
+                  opacity: 1.0;
+                  -webkit-transform: rotate(3deg) translate(0px, -4px);
+                  -moz-transform: rotate(3deg) translate(0px, -4px);
+                  -ms-transform: rotate(3deg) translate(0px, -4px);
+                  -o-transform: rotate(3deg) translate(0px, -4px);
+                  transform: rotate(3deg) translate(0px, -4px);
+                }
+                
+                .pace .pace-activity {
+                  display: block;
+                  position: fixed;
+                  z-index: 2000;
+                  top: 15px;
+                  left: 15px;
+                  width: 14px;
+                  height: 14px;
+                  border: solid 2px transparent;
+                  border-top-color: #86929B;
+                  border-left-color: #86929B;
+                  border-radius: 10px;
+                  -webkit-animation: pace-spinner 400ms linear infinite;
+                  -moz-animation: pace-spinner 400ms linear infinite;
+                  -ms-animation: pace-spinner 400ms linear infinite;
+                  -o-animation: pace-spinner 400ms linear infinite;
+                  animation: pace-spinner 400ms linear infinite;
+                }
+                
+                @-webkit-keyframes pace-spinner {
+                  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-moz-keyframes pace-spinner {
+                  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-o-keyframes pace-spinner {
+                  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @-ms-keyframes pace-spinner {
+                  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                @keyframes pace-spinner {
+                  0% { transform: rotate(0deg); transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); transform: rotate(360deg); }
+                }
+                 
+        
+/*]]&gt;*/
+</style>
+<title>SystemHUB - Systems</title>
+    <style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer &gt; tbody &gt; tr &gt; td, .JColResizer &gt; tbody &gt; tr &gt; th{overflow:hidden;padding-left:0!important; padding-right:0!important;}  .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: e-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{width:auto!important;} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style></head>
+<body class="pace-done modal-open"><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<header class="header">
+    <div class="container">
+        <nav class="header-content navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                                        <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view" class="navbar-brand">
+                        <img width="200" height="50" src="/assets/easyimage/9/9b2bfbaf09f3642aa131265a837c66ee.JPG?t=1500393471" alt="logo" />                    </a>
+                </div>
+                <div class="collapse navbar-collapse closed">
+                    <ul class="nav navbar-nav user-nav navbar-right">
+                        <li class="dropdown user-navigation btn-group">
+                            <div class="dropdown">
+    <button aria-expanded="true" aria-haspopup="true" data-toggle="dropdown" id="userDropdownMenu" class="btn btn-primary dropdown-toggle">
+        <img alt="" src="/assets/easyimage/6/6f00b86e78aa80f42f63069327dfebb7.jpeg?t=1500393471" class="avatar valign-middle" />    </button>
+    <ul aria-labelledby="userDropdownMenu" class="dropdown-menu">
+                    <li>
+                <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/member/profile/id/297" class="js-page-loading profile">Profile</a>            </li>
+                            <li>
+                <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/company/edit/id/115" class="js-page-loading settings">Company</a>            </li>
+                                    <li>
+                <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/checkout/subscription/billing/id/115" class="js-page-loading billing">Billing</a>            </li>
+                                <!--<li></li>-->
+                <li>
+            <a href="http://help.systemhub.com" target="_blank">Help</a>        </li>
+        <li>
+            <a href="/auth/webUser/logout" class="js-page-loading logout">Logout</a>        </li>
+    </ul>
+</div>
+                        </li>
+                    </ul>
+                    <form method="GET" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/search/byType/search/standart/searchClass/SystemEntitySearch" id="contact-form" class="navbar-form navbar-right"><div class="form-group input-group">
+    <input type="text" id="application_models_forms_SearchForm_keys" name="application_models_forms_SearchForm[keys]" placeholder="Search" class="form-control search-query" /></div>
+</form>                    <ul class="nav navbar-nav navbar-left link-system">
+                                                    <li>
+                                <a class="btn btn-primary btn-block systems js-page-loading" href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view">Systems</a>
+                            </li>
+                                                                            <li>
+                                <a class="btn btn-primary btn-block policies js-page-loading" href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/policyFolder/view">Policies</a>
+                            </li>
+                                                                            <li>
+                                <a class="btn btn-primary btn-block trainings js-page-loading" href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/trainingFolder/view">Trainings</a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+            <div class="layouts-column3 row">
+        <div class="three-left col-md-3 ui-resizable" style="width: 270px;">
+            <div class="panel panel-default layouts-left-sidebar tree-sidebar tb-container" id="left-sidebar">
+    <div class="panel-heading">
+        <h2 class="panel-title">
+            <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/mode/grid" class="js-page-loading valign-top">
+                <span aria-hidden="true" class="glyphicon glyphicon-cog"></span>Systems
+            </a><span id="close-left-sidebar">✕</span>
+        </h2>
+                <h2 class="panel-title">
+            <a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/entityTrash/trashBin/id/115" class="valign-top">
+                <span data-original-title="Restore" rel="tooltip" aria-hidden="true" class="glyphicon glyphicon-trash js-tooltip-init"> </span>
+            </a>
+        </h2>
+            </div>
+    <div class="panel-body">
+        <div class="">
+            
+            <div id="tree-view" class="tree-view"><ul class="jqtree_common jqtree-tree" role="tree"><li class="jqtree-folder jqtree_common   owner assigned" role="presentation" id="4593" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">▼</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="true"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4593" class="  owner assigned" data-placement="top" data-original-title="Autotest" rel="tooltip"><span>Autotest</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common  " role="presentation" id="5223" data-parent="4593" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5223" class=" " data-placement="top" data-original-title="Autotest" rel="tooltip"><span>Autotest</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common  " role="presentation" id="5224" data-parent="5223" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5224" class=" " data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   System-grey" role="presentation" id="5225" data-parent="5224" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5225" class="  System-grey" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common  " role="presentation" id="5226" data-parent="5224" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5226" class=" " data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common  " role="presentation" id="5227" data-parent="5224" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5227" class=" " data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   System-grey" role="presentation" id="5228" data-parent="5224" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5228" class="  System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li><li class="jqtree_common   owner System-grey" role="presentation" id="4971" data-parent="4593" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4971" class="  owner System-grey" data-placement="top" data-original-title="Caterpillar" rel="tooltip"><span>Caterpillar</span></a></span></div></li><li class="jqtree-folder jqtree_common   owner selected" role="presentation" id="5442" data-parent="4593" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">▼</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="true"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5442" class="  owner" data-placement="top" data-original-title="Delete&amp;Recover_folder" rel="tooltip"><span>Delete&amp;Recover_folder</span></a></span></div><ul class="jqtree_common " role="group" style="display: block;"><li class="jqtree_common   owner System-grey" role="presentation" id="5443" data-parent="5442" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5443" class="  owner System-grey" data-placement="top" data-original-title="file1" rel="tooltip"><span>file1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5444" data-parent="5442" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5444" class="  owner System-grey" data-placement="top" data-original-title="file2" rel="tooltip"><span>file2</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5445" data-parent="5442" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5445" class="  owner System-grey" data-placement="top" data-original-title="file3" rel="tooltip"><span>file3</span></a></span></div></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner assigned" role="presentation" id="4716" data-parent="4593" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4716" class="  owner assigned" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-orange assigned" role="presentation" id="4728" data-parent="4716" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4728" class="  owner System-orange assigned" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="4717" data-parent="4716" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4717" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="4718" data-parent="4716" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4718" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="4720" data-parent="4716" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4720" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4594" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4594" class="  owner" data-placement="top" data-original-title="Autotest2" rel="tooltip"><span>Autotest2</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4954" data-parent="4594" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4954" class="  owner" data-placement="top" data-original-title="Autotest" rel="tooltip"><span>Autotest</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-green" role="presentation" id="4955" data-parent="4954" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4955" class="  owner System-green" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4956" data-parent="4954" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4956" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner" role="presentation" id="4957" data-parent="4956" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4957" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4958" data-parent="4956" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4958" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="4959" data-parent="4958" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="5" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4959" class="  owner System-grey" data-placement="top" data-original-title="Something interesting" rel="tooltip"><span>Something interesting</span></a></span></div></li></ul></li><li class="jqtree_common   owner System-grey" role="presentation" id="4960" data-parent="4956" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4960" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li><li class="jqtree_common   owner System-grey" role="presentation" id="5284" data-parent="4594" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5284" class="  owner System-grey" data-placement="top" data-original-title="Caterpillar" rel="tooltip"><span>Caterpillar</span></a></span></div></li><li class="jqtree_common   owner System-orange" role="presentation" id="4595" data-parent="4594" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4595" class="  owner System-orange" data-placement="top" data-original-title="Gold" rel="tooltip"><span>Gold</span></a></span></div></li></ul></li><li class="jqtree_common   owner" role="presentation" id="5398" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5398" class="  owner" data-placement="top" data-original-title="Contributor_folder" rel="tooltip"><span>Contributor_folder</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5375" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5375" class="  owner" data-placement="top" data-original-title="editor doc" rel="tooltip"><span>editor doc</span></a></span></div></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5274" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5274" class="  owner" data-placement="top" data-original-title="Folder for Comments" rel="tooltip"><span>Folder for Comments</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5275" data-parent="5274" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5275" class="  owner System-grey" data-placement="top" data-original-title="Comments" rel="tooltip"><span>Comments</span></a></span></div></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4648" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4648" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner" role="presentation" id="4666" data-parent="4648" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4666" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="4668" data-parent="4648" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4668" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="4780" data-parent="4648" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4780" class="  owner" data-placement="top" data-original-title="Oksaa test deleted" rel="tooltip"><span>Oksaa test deleted</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="4779" data-parent="4648" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4779" class="  owner System-grey" data-placement="top" data-original-title="Oksana test not deleted" rel="tooltip"><span>Oksana test not deleted</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="4778" data-parent="4648" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4778" class="  owner" data-placement="top" data-original-title="Oksana test not deleted" rel="tooltip"><span>Oksana test not deleted</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="4649" data-parent="4648" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4649" class="  owner System-grey" data-placement="top" data-original-title="Present file_systems_deleted" rel="tooltip"><span>Present file_systems_deleted</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="4669" data-parent="4648" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4669" class="  owner System-grey" data-placement="top" data-original-title="Something interesting" rel="tooltip"><span>Something interesting</span></a></span></div></li></ul></li><li class="jqtree_common   owner" role="presentation" id="5377" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5377" class="  owner" data-placement="top" data-original-title="qweqwe" rel="tooltip"><span>qweqwe</span></a></span></div></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="4816" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4816" class="  owner" data-placement="top" data-original-title="Zina_folder" rel="tooltip"><span>Zina_folder</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5096" data-parent="4816" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5096" class="  owner" data-placement="top" data-original-title="Autotest" rel="tooltip"><span>Autotest</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5097" data-parent="5096" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5097" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5098" data-parent="5097" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5098" class="  owner System-grey" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5099" data-parent="5097" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5099" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5100" data-parent="5097" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5100" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5101" data-parent="5097" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5101" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5102" data-parent="4816" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5102" class="  owner" data-placement="top" data-original-title="Autotest 1" rel="tooltip"><span>Autotest 1</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5103" data-parent="5102" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5103" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5104" data-parent="5103" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5104" class="  owner System-grey" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5105" data-parent="5103" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5105" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5106" data-parent="5103" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5106" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5107" data-parent="5103" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5107" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5108" data-parent="4816" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5108" class="  owner" data-placement="top" data-original-title="Autotest 2" rel="tooltip"><span>Autotest 2</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5109" data-parent="5108" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5109" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5110" data-parent="5109" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5110" class="  owner System-grey" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5111" data-parent="5109" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5111" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5112" data-parent="5109" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5112" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5113" data-parent="5109" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5113" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li><li class="jqtree_common   owner System-grey" role="presentation" id="5219" data-parent="5108" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5219" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5114" data-parent="4816" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5114" class="  owner" data-placement="top" data-original-title="Autotest 3" rel="tooltip"><span>Autotest 3</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree-folder jqtree-closed jqtree_common   owner" role="presentation" id="5115" data-parent="5114" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="3" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5115" class="  owner" data-placement="top" data-original-title="Present" rel="tooltip"><span>Present</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5116" data-parent="5115" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5116" class="  owner System-grey" data-placement="top" data-original-title="HappyFile" rel="tooltip"><span>HappyFile</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5117" data-parent="5115" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5117" class="  owner" data-placement="top" data-original-title="Hot-dog" rel="tooltip"><span>Hot-dog</span></a></span></div></li><li class="jqtree_common   owner" role="presentation" id="5118" data-parent="5115" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/5118" class="  owner" data-placement="top" data-original-title="Hot-dog 1" rel="tooltip"><span>Hot-dog 1</span></a></span></div></li><li class="jqtree_common   owner System-grey" role="presentation" id="5119" data-parent="5115" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="4" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5119" class="  owner System-grey" data-placement="top" data-original-title="Present file" rel="tooltip"><span>Present file</span></a></span></div></li></ul></li></ul></li></ul></li><li class="jqtree-folder jqtree-closed jqtree_common   owner recovery" role="presentation" id="5338" data-parent="0" data-type="SystemFolderRecovery"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/SystemFolderRecovery/view/id/5338" class="  owner recovery" data-placement="top" data-original-title="Recovered" rel="tooltip"><span>Recovered</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   owner System-grey" role="presentation" id="5237" data-parent="5338" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5237" class="  owner System-grey" data-placement="top" data-original-title="q" rel="tooltip"><span>q</span></a></span></div></li></ul></li><li class="jqtree_common   owner recovery" role="presentation" id="5341" data-parent="0" data-type="SystemFolderRecovery"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/SystemFolderRecovery/view/id/5341" class="  owner recovery" data-placement="top" data-original-title="Recovered" rel="tooltip"><span>Recovered</span></a></span></div></li><li class="jqtree_common   owner recovery" role="presentation" id="5342" data-parent="0" data-type="SystemFolderRecovery"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/SystemFolderRecovery/view/id/5342" class="  owner recovery" data-placement="top" data-original-title="Recovered" rel="tooltip"><span>Recovered</span></a></span></div></li><li class="jqtree-folder jqtree-closed jqtree_common   master" role="presentation" id="4322" data-parent="0" data-type="Folder"><div class="jqtree-element jqtree_common" role="presentation"><a class="jqtree-toggler jqtree_common jqtree-closed jqtree-toggler-left" role="presentation" aria-hidden="true" data-original-title="" title="">►</a><span class="jqtree-title jqtree_common jqtree-title-folder" role="treeitem" aria-level="1" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/view/id/4322" class="  master" data-placement="top" data-original-title="You would go you would go NEPUGIA2" rel="tooltip"><span>You would go you would go NEPUGIA2</span></a></span></div><ul class="jqtree_common " role="group"><li class="jqtree_common   master System-green" role="presentation" id="4336" data-parent="4322" data-type="System"><div class="jqtree-element jqtree_common" role="presentation"><span class="jqtree-title jqtree_common" role="treeitem" aria-level="2" aria-selected="false" aria-expanded="false"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/4336" class="  master System-green" data-placement="top" data-original-title="123123123" rel="tooltip"><span>123123123</span></a></span></div></li></ul></li></ul></div>        </div>
+    </div>
+</div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+        <div data-copyhrefdisabled="true" data-renamedisabled="true" data-deletedisabled="true" data-duplicatedisabled="true" data-openblankdisabled="true" class="three-center col-md-6 useContext" style="width: 930px;">
+            <div class="system-folder-grid-view system-folder-grid-view-custom" id="content">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="icons-left">
+                <li class="tree">
+                    <span aria-hidden="true" class="glyphicon glyphicon-cog" id="left-sidebar-menu-trigger"></span>
+                </li>
+            </ul>
+            <h2 class="panel-title">
+                <span aria-hidden="true" class="glyphicon glyphicon-folder-open"></span>
+            </h2>
+            <div class="breadcrumbs-scroll">
+                <h2 class="panel-title">
+                <span class="panel-title-breadcrumps">
+                    <div class="breadcrumbs">
+<a href="/company/systemFolder/view/mode/grid" title="Systems">Systems</a> » <a href="/company/systemFolder/view/id/4593/mode/grid" title="Autotest">Autotest</a> » <span>Delete&amp;Recover_folder</span></div>                </span>
+                </h2>
+            </div>
+                <ul class="icons-right">
+                        <li>
+        <a href="javascript:void(0)" rel="tooltip" data-target="#addSystem" data-toggle="modal" title="" aria-hidden="1" class="add-system glyphicon glyphicon-file js-tooltip-init" onclick='$("#addSystem").find("#application_models_SystemEntityModel_parentId").val("5442"); return false;' data-original-title="Create system"></a>    </li>
+                                <li>
+        <a href="javascript:void(0)" rel="tooltip" title="" data-target="#addFolder" data-toggle="modal" aria-hidden="1" class="add-folder glyphicon glyphicon-folder-close js-tooltip-init" onclick='$("#addFolder").find("#application_models_SystemEntityModel_parentId").val("5442"); return false;' data-original-title="Create folder"></a>    </li>
+                <li class="properties">
+            <span aria-hidden="true" class="glyphicon glyphicon-tasks js-tooltip-init" title="" rel="tooltip" id="right-sidebar-menu-trigger" data-original-title="Advanced search"></span>
+        </li>
+    </ul>
+        </div>
+        <div class="panel-body">
+            <div class="layouts-grid">
+    <div id="system-folder-grid" class="table-responsive grid-view">
+<div class="JCLRgrips" style="width: 897px;"><div class="JCLRgrip" style="left: 42px; height: 131px;"><div class="JColResizer"></div></div><div class="JCLRgrip" style="left: 421px; height: 131px;"><div class="JColResizer"></div></div><div class="JCLRgrip" style="left: 799px; height: 131px;"><div class="JColResizer"></div></div><div class="JCLRgrip JCLRLastGrip" style="left: 899px; height: 131px;"></div></div><table class="table table-condensed JColResizer" id="JColResizer0">
+<thead>
+<tr>
+<th id="system-folder-grid_c0" class="width-40" style="width: 40px;"><a href="/company/systemFolder/view/id/5442/application_models_SystemEntityModel_sort/type" class="sort-link">Type</a></th><th id="system-folder-grid_c1" style="width: 379px;"><a href="/company/systemFolder/view/id/5442/application_models_SystemEntityModel_sort/title" class="sort-link">Title</a></th><th id="system-folder-grid_c2" style="width: 378px;"><a href="/company/systemFolder/view/id/5442/application_models_SystemEntityModel_sort/ownerFullName" class="sort-link">Owner</a></th><th id="system-folder-grid_c3" class="width-100" style="width: 100px;"><a href="/company/systemFolder/view/id/5442/application_models_SystemEntityModel_sort/dateUpdate" class="sort-link">Last Updated</a></th><th id="system-folder-grid_c5" class="button-column-link hide-button"> </th></tr>
+</thead>
+<tbody>
+<tr data-instance="grid" data-parent="5442" data-id="5443" class="System System-grey client Folder ui-draggable ui-draggable-handle ui-droppable"><td><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5443" data-original-title="file1" rel="tooltip" class="js-tooltip-init">System</a></td><td>file1</td><td>Ivan Ivanov</td><td>2017-07-23</td><td id="view_system-folder-grid_c5" class="button-column-link hide-button"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5443" title="View" class="view"><img alt="View" src="/assets/91d833af/gridview/view.png" /></a></td></tr>
+<tr data-instance="grid" data-parent="5442" data-id="5444" class="System System-grey client Folder ui-draggable ui-draggable-handle ui-droppable"><td><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5444" data-original-title="file2" rel="tooltip" class="js-tooltip-init">System</a></td><td>file2</td><td>Ivan Ivanov</td><td>2017-07-23</td><td id="view_system-folder-grid_c5" class="button-column-link hide-button"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5444" title="View" class="view"><img alt="View" src="/assets/91d833af/gridview/view.png" /></a></td></tr>
+<tr data-instance="grid" data-parent="5442" data-id="5445" class="System System-grey client Folder ui-draggable ui-draggable-handle ui-droppable"><td><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5445" data-original-title="file3" rel="tooltip" class="js-tooltip-init">System</a></td><td>file3</td><td>Ivan Ivanov</td><td>2017-07-23</td><td id="view_system-folder-grid_c5" class="button-column-link hide-button"><a href="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/view/id/5445" title="View" class="view"><img alt="View" src="/assets/91d833af/gridview/view.png" /></a></td></tr>
+</tbody>
+</table><div class="summary">Displaying 1-3 of 3 results.</div><div title="/company/systemFolder/view/id/5442" style="display:none" class="keys"><span>5443</span><span>5444</span><span>5445</span></div>
+</div></div>        </div>
+    </div>
+</div>        </div>
+        <div class="three-right col-md-3 hidden" style="width: 30px;">
+            
+<div class="tb-container tb-container-right advanced-search-sidebar" id="right-sidebar" style="display: none;">
+    <div class="panel panel-default advanced-search-container">
+        <div class="panel-heading">
+            <h2 class="panel-title"><span aria-hidden="true" class="glyphicon glyphicon-tasks"></span>Advanced search <span id="close-right-sidebar">✕</span></h2>
+        </div>
+        <div class="panel-body">
+            <div class="advancedSearch">
+    <div class="form">
+        <form method="GET" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/search/byType/mode/grid/search/advanced" id="contact-form">        <div class="section-row">
+            <input type="text" id="application_models_forms_SearchForm_title" name="application_models_forms_SearchForm[title]" placeholder="Keyword or tag" class="form-control" />            <div style="display:none" id="application_models_forms_SearchForm_title_em_" class="errorMessage"></div>        </div>
+      <!--  <div class="section-row">
+            <div class="section-row-date">
+                            </div>
+        </div>-->
+        <div class="section-row">
+            <select id="application_models_forms_SearchForm_roleId" name="application_models_forms_SearchForm[roleId]" class="form-control">
+<option value="">All roles</option>
+<option value="62"> *()*(_*((Ш?*Ш:?</option>
+<option value="14">1234567</option>
+<option value="40">bla-bla</option>
+<option value="51">break</option>
+<option value="72">break1</option>
+<option value="50">cammon</option>
+<option value="18">Colleagues</option>
+<option value="10">Friends</option>
+<option value="48">jam</option>
+<option value="21">Marketing</option>
+<option value="53">oop</option>
+<option value="58">triada</option>
+<option value="56">usa</option>
+</select>            <div style="display:none" id="application_models_forms_SearchForm_roleId_em_" class="errorMessage"></div>        </div>
+        <div class="section-row">
+            <select id="application_models_forms_SearchForm_ownerId" name="application_models_forms_SearchForm[ownerId]" class="form-control">
+<option value="">All owners</option>
+<option value="297">Ivan Ivanov</option>
+<option value="308">Bill Billich</option>
+<option value="313">Zina Zinova</option>
+<option value="333">Robo Cop</option>
+<option value="334">Logan Dacia</option>
+<option value="336">Vinni Puhh</option>
+<option value="338">Dan Daniels</option>
+<option value="341">Contr Contib</option>
+</select>            <div style="display:none" id="application_models_forms_SearchForm_ownerId_em_" class="errorMessage"></div>        </div>
+        <div class="section-row">
+            <select id="application_models_forms_SearchForm_assignedId" name="application_models_forms_SearchForm[assignedId]" class="form-control">
+<option value="">All assigned members</option>
+<option value="297">Ivan Ivanov</option>
+<option value="308">Bill Billich</option>
+<option value="313">Zina Zinova</option>
+<option value="332">David Blane</option>
+<option value="333">Robo Cop</option>
+<option value="334">Logan Dacia</option>
+<option value="336">Vinni Puhh</option>
+<option value="337">Petro Petrovich</option>
+<option value="338">Dan Daniels</option>
+<option value="341">Contr Contib</option>
+<option value="355">qwe asd</option>
+</select>            <div style="display:none" id="application_models_forms_SearchForm_assignedId_em_" class="errorMessage"></div>        </div>
+        <div class="section-row dropDownList">
+            <select id="application_models_forms_SearchForm_parentId" name="application_models_forms_SearchForm[parentId]" class="selectpicker form-control">
+<option value="">All folders</option>
+<option value="4593">Autotest</option>
+<option value="5096">Autotest</option>
+<option value="4954">Autotest</option>
+<option value="5102">Autotest 1</option>
+<option value="5108">Autotest 2</option>
+<option value="5114">Autotest 3</option>
+<option value="4594">Autotest2</option>
+<option value="5398">Contributor_folder</option>
+<option value="5442">Delete&amp;amp;Recover_folder</option>
+<option value="5375">editor doc</option>
+<option value="5274">Folder for Comments</option>
+<option value="4979">Folder1</option>
+<option value="4980">Folder2</option>
+<option value="4981">Folder_dasfdnasjkfnadkjsnfkljdnasfjasdnfldkjsnfkljsdnafkjasdnfkjasdnfkjlasdnfkladnsfkjansfklnasdfklj</option>
+<option value="4982">Folder_fdmklgfmb;lm gf;lbmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmm </option>
+<option value="5117">Hot-dog</option>
+<option value="4957">Hot-dog</option>
+<option value="4677">Hot-dog</option>
+<option value="5111">Hot-dog</option>
+<option value="5099">Hot-dog</option>
+<option value="4666">Hot-dog</option>
+<option value="4717">Hot-dog</option>
+<option value="5105">Hot-dog</option>
+<option value="5112">Hot-dog 1</option>
+<option value="5118">Hot-dog 1</option>
+<option value="4668">Hot-dog 1</option>
+<option value="5106">Hot-dog 1</option>
+<option value="5100">Hot-dog 1</option>
+<option value="4958">Hot-dog 1</option>
+<option value="4718">Hot-dog 1</option>
+<option value="4780">Oksaa test deleted</option>
+<option value="4778">Oksana test not deleted</option>
+<option value="5103">Present</option>
+<option value="5109">Present</option>
+<option value="5097">Present</option>
+<option value="4648">Present</option>
+<option value="5115">Present</option>
+<option value="4956">Present</option>
+<option value="4716">Present</option>
+<option value="5377">qweqwe</option>
+<option value="4816">Zina_folder</option>
+</select>            <div style="display:none" id="application_models_forms_SearchForm_parentId_em_" class="errorMessage"></div>        </div>
+        <div class="section-row dropDownList">
+            <select id="application_models_forms_SearchForm_state" name="application_models_forms_SearchForm[state]" class="selectpicker form-control">
+<option value="">All statuses</option>
+<option value="1">In progress</option>
+<option value="3">Published</option>
+<option value="2">Not in use</option>
+</select>            <div style="display:none" id="application_models_forms_SearchForm_state_em_" class="errorMessage"></div>        </div>
+        <div class="section-row checkBoxList">
+            <input type="hidden" name="application_models_forms_SearchForm[type]" value="" id="ytapplication_models_forms_SearchForm_type" /><span id="application_models_forms_SearchForm_type"><input type="checkbox" name="application_models_forms_SearchForm[type][]" value="System" id="application_models_forms_SearchForm_type_0" /> <label for="application_models_forms_SearchForm_type_0">Systems</label><input type="checkbox" name="application_models_forms_SearchForm[type][]" value="Folder" id="application_models_forms_SearchForm_type_1" /> <label for="application_models_forms_SearchForm_type_1">Folders</label></span>            <div style="display:none" id="application_models_forms_SearchForm_type_em_" class="errorMessage"></div>        </div>
+        <div class="section-row buttons">
+            <input type="submit" value="Search" name="yt0" class="btn btn-primary js-page-loading" />        </div>
+        </form>    </div>
+</div>        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="copyright valign-middle">
+            © 2017 Copyright systemHUB
+        </div>
+    </div>
+            <div id="addFolder" role="dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Create folder</h4>
+            </div>
+            <div class="modal-body"><form method="post" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/add" id="add-folder-form" autocomplete="off">    <div class="section-row">
+        <div class="section-input">
+            <div class="errors-holder">
+                <div style="display:none" id="application_models_SystemEntityModel_title_em_" class="errorMessage"></div>                <div style="display:none" id="application_models_SystemEntityModel_parentId_em_" class="errorMessage"></div>            </div>
+            <input type="text" id="application_models_SystemEntityModel_title" name="application_models_SystemEntityModel[title]" class="form-control" autocomplete="off" placeholder="Enter title..." maxlength="100" />        </div>
+    </div>
+    <div class="section-row buttons">
+        <input type="hidden" id="application_models_SystemEntityModel_parentId" name="application_models_SystemEntityModel[parentId]" value="5442" />        <input type="hidden" id="application_models_SystemEntityModel_ownerId" name="application_models_SystemEntityModel[ownerId]" value="297" />        <input type="hidden" id="application_models_SystemEntityModel_type" name="application_models_SystemEntityModel[type]" value="Folder" />        <button value="Create" name="DHtml5975ab86243ab" type="submit" class="btn btn-primary">Create</button>    </div>
+</form></div>
+</div>
+</div>
+</div>        <div id="addSystem" role="dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Create system</h4>
+            </div>
+            <div class="modal-body"><form method="post" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemDocument/add" id="add-system-form" autocomplete="off"><div class="section-row">
+    <div class="section-input">
+        <div class="errors-holder">
+            <div style="display:none" id="application_models_SystemEntityModel_title_em_" class="errorMessage"></div>            <div style="display:none" id="application_models_SystemEntityModel_parentId_em_" class="errorMessage"></div>        </div>
+        <input type="text" id="application_models_SystemEntityModel_title" name="application_models_SystemEntityModel[title]" class="form-control" autocomplete="off" placeholder="Enter title..." maxlength="100" />    </div>
+</div>
+<div class="section-row buttons">
+    <input type="hidden" id="application_models_SystemEntityModel_parentId" name="application_models_SystemEntityModel[parentId]" value="5442" />    <input type="hidden" id="application_models_SystemEntityModel_ownerId" name="application_models_SystemEntityModel[ownerId]" value="297" />    <input type="hidden" id="application_models_SystemEntityModel_type" name="application_models_SystemEntityModel[type]" value="System" />    <button value="Create" name="DHtml5975ab8624815" type="submit" class="btn btn-primary">Create</button></div>
+</form></div>
+</div>
+</div>
+</div>        <div id="updateEntity" role="dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Rename</h4>
+            </div>
+            <div class="modal-body"><form method="post" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemEntity/updateTitle" id="update-entity-form"><div class="section-row">
+    <div class="section-input">
+        <div class="errors-holder">
+            <div style="display:none" id="application_models_SystemEntityModel_title_em_" class="errorMessage"></div>        </div>
+        <input type="text" maxlength="100" id="application_models_SystemEntityModel_title" name="application_models_SystemEntityModel[title]" class="form-control" autocomplete="off" />    </div>
+</div>
+<div class="section-row buttons">
+    <input type="hidden" id="application_models_SystemEntityModel_id" name="application_models_SystemEntityModel[id]" />    <button value="Update" name="DHtml5975ab8624e81" type="submit" class="btn btn-primary">Update</button></div>
+</form></div>
+</div>
+</div>
+</div>
+    </footer>
+            <div role="dialog" class="modal fade copy-past-dialog" id="copypast-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Duplicate to:</h4>
+            </div>
+            <div class="modal-body"><div class="tree-view" id="copypast-tree">
+    <div class="jqtree-loading">
+        <span class="jqtree-loading-animation glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+    </div>
+</div>
+<div class="buttons section-row">
+    <a href="javascript:void(0);" class="btn btn-primary yes">Duplicate</a>
+    <a href="javascript:void(0);" class="btn btn-default no">Cancel</a>
+</div>
+</div>
+</div>
+</div>
+</div><div role="dialog" class="modal fade restore-session-popup" id="expire-session-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Session expired</h4>
+            </div>
+            <div class="modal-body"><form method="post" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/restoreSystem/tryRestoreSession/systemId/0/token/0e6fc87d17e1dc4f8c7cf5cacf1a625bf8c28d767deefd318f1087d607959f62" id="login-form" autocomplete="off">    <div class="form-body">
+        <p>Hey Ivan, are you still there?</p>
+        <input type="hidden" id="application_models_forms_LoginForm_username" name="application_models_forms_LoginForm[username]" value="cro.gen4@gmail.com" />        <div class="section-row">
+            <div class="section-input">
+                <div class="errors-box">
+                    <div style="display:none" id="application_models_forms_LoginForm_password_em_" class="errorMessage"></div>                </div>
+                <input type="password" id="application_models_forms_LoginForm_password" name="application_models_forms_LoginForm[password]" class="form-control" placeholder="Password..." autocomplete="off" />            </div>
+        </div>
+    </div>
+    <div class="buttons section-row">
+        <input type="submit" value="Login" name="yt1" id="restore-session-submit-button" class="yes btn btn-primary dialog-close" />    </div>
+</form></div>
+</div>
+</div>
+</div>        <div role="dialog" class="modal fade assign-dialog assign-entity" id="assign-entity">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Assign folder</h4>
+            </div>
+            <div class="modal-body"><form method="post" action="http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/assignFolder" id="assign-entity-form">
+    <input type="hidden" value="" name="entityId" id="assign-entity-entityId" />
+    <div class="content"></div>
+    <div class="buttons">
+        <input type="submit" value="Assign" name="yt2" class="yes btn btn-primary" />        <a href="javascript:void(0);" onclick='$("#assign-entity").assignPopup("close");' class="no btn btn-default">Cancel</a>    </div>
+</form></div>
+</div>
+</div>
+</div><script src="/assets/script-2-UouBK6Br5Uaixug63d8z2g.js?1500393299" type="text/javascript"></script>
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+   
+                if (window.innerWidth &lt; 990) {
+                    $('#left-sidebar-menu-trigger, #close-left-sidebar').sidr({
+                        name: 'mobile-left-sidebar-menu',
+                        side: 'left',
+                        onOpen: function() {
+                            if (!$('#mobile-left-sidebar-menu').data('hasContent')) {
+                                $('#mobile-left-sidebar-menu').html($('#left-sidebar')).data('hasContent', true);
+                            }
+                        },
+                    });
+                }
+            
+  
+                if (window.innerWidth &lt; 990) {
+                    $('#right-sidebar-menu-trigger, #close-right-sidebar').sidr({
+                        name: 'mobile-right-sidebar-menu',
+                        side: 'right',
+                        onOpen: function() {
+                            if (!$('#mobile-right-sidebar-menu').data('hasContent')) {
+                                $('#mobile-right-sidebar-menu').html($('#right-sidebar')).data('hasContent', true);
+                            }
+                        },
+                    });
+                }
+            
+$(document).ready(function () {
+            $('.three-left').resizeColumn({
+                autoOpen: false,
+            });
+        });
+$(document).on('jquery.ddBridge.copyUrl', function (e, data) {
+            $('.icon-copyhref').copyToClipboard({
+                afterCopyMessage: 'Link copied to clipboard.',
+            });
+            $('.icon-copyhref').copyToClipboard('copyData', data);
+        });
+$.fn.notifyWidget('init', {'notifySettings':[]});
+$("#copypast-dialog").on('show.bs.modal', function () {
+        showTree();
+    });
+    $("#copypast-dialog").on('hide.bs.modal', function () {
+        $(this).copy("clear");
+    });
+
+    showTree = function () {
+        var $tree = $('#copypast-tree');
+        $tree.tree({
+            closedIcon: '',
+            openedIcon: ''
+        });
+        $.getJSON('http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/duplicateSystem/treeData', function (data) {
+            $tree.tree('setOption', 'onCreateLi', function (node, $li) {
+                if (!$li.find('.jqtree-toggler').length) {
+                    $li.find('.jqtree-title').before('&lt;a class="jqtree_common jqtree-toggler jqtree-closed static-folder"&gt;&lt;/a&gt;');
+                }
+                $li.attr('id', node.id);
+            });
+            $tree.tree('loadData', data.data);
+            $('.static-folder').click(function () {
+                if ($(this).hasClass('jqtree-closed')) {
+                    $(this).removeClass('jqtree-closed');
+                } else {
+                    $(this).addClass('jqtree-closed');
+                }
+            });
+            $('#copypast-tree .dots').remove();
+        });
+    }
+
+    $(document).on('click', '#copypast-dialog .buttons .btn.yes', function () {
+        var folder = $('#copypast-dialog .jqtree-selected');
+        if (folder.length) {
+            $(document).trigger('company.entity.copy.afterValidate', true);
+            $(this).copy('paste', {
+                'id': folder.attr('id')
+            });
+        } else {
+            $(document).trigger('company.entity.copy.afterValidate', false);
+            $.fn.notifyWidget('notify', {message: 'You should select a folder.'});
+        }
+    });
+    $(document).on('click', '#copypast-dialog .buttons .btn.no', function () {
+        $('#copypast-dialog').modal('hide');
+    });
+$(document).ddBridge({'entity':'application_models_SystemEntityModel','deleteUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemEntity/delete','openBlankUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company','currentModule':'company','folderClass':'Folder','entityId':'5442','systems':['System','Training','Policy'],'folders':['Folder','TrainingFolder','PolicyFolder']}); $(document).ddView([]); $(document).ddAjax({'moveUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/move','revertUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/revertMove'}); 
+  function updateListView(element) {
+                    url = 'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/getCompanyMembersForAssign';
+                    filterType = element.data('type');
+                    $.get(url+'/'+ filterType +'/'+element.val(), function(data) {
+                            $('.'+element.data('class')).replaceWith(data);
+                        });
+                    
+                    return true;
+                }
+                
+                $(document).on('input', '.js-filter-field', function(e) {
+                    updateListView($(this));
+                });
+            
+            
+                        $('#assign-entity').assignPopup({'action':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/assignFolder','contentSelector':'#assign-entity .content','contentUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemFolder/getCompanyMembersForAssign'});
+                    
+jQuery(function($) {
+	
+	            if (typeof localStorage === 'object') {
+	                try {
+	                    localStorage.setItem('localStorage', 1);
+	                    localStorage.removeItem('localStorage');
+	                } catch (e) {
+	                    Storage.prototype._setItem = Storage.prototype.setItem;
+	                    Storage.prototype.setItem = function() {};
+	                    console.log('Your web browser does not support storing settings locally. In Safari, the most common cause of this is using "Private Browsing Mode". Some settings may not save or some features may not work properly for you.');
+	                }
+	            }
+	        
+	
+	
+	            $(document).on("click", "tbody tr", function(e){
+	                if(!$(e.target).is("a")) {
+	                    if($(this).not(".button-column a").find("td[id=view_system-folder-grid_c5] a").attr("href") !== undefined) {
+	                        window.location = $(this).not(".button-column a").find("td[id=view_system-folder-grid_c5] a").attr("href");
+	                    }
+	                }
+	            });
+	        
+	jQuery('#system-folder-grid').yiiGridView({'ajaxUpdate':['system-folder-grid'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'table table-condensed','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'application_models_SystemEntityModel_page','afterAjaxUpdate':function(){
+	                $('#system-folder-grid table').colResizable({'postbackSafe':true,'minWidth':45,'disable': (($(window).width() &lt; 990)? true : false)});
+	            }});
+	
+	            $(document).ready(function() {
+	                $("table").colResizable({'dragCursor':'col-resize','postbackSafe':true,'minWidth':45,'disable': (($(window).width() &lt; 990)? true : false)});
+	            });
+	        
+	$(document).ddView($.extend({}, $(document).ddBridge('getOptions', 'ddView'), {'viewId':'#system-folder-grid','itemSelector':'tbody tr','enableDragDropView':true}));
+	$(document).ddView({isRemoveDraggedNode: true}); $(document).ddView('behaviorDragDrop'); $(document).ajaxSuccess(function(e, xhr, settings) {if (settings.url === $.fn.yiiGridView.getUrl('system-folder-grid')) {$(document).ddView('behaviorDragDrop');}});
+	jQuery("#tree-view").extendJqTree($.extend({}, $(document).ddBridge('getOptions', 'jqtreeExtended'), {'onInitTree':function(e) { console.log("wwww");  }}));
+	if (jQuery.jqTree == undefined) {jQuery.jqTree = new Array;}
+	jQuery.jqTree["tree-view"] = jQuery("#tree-view").tree($.extend({}, $(document).ddBridge('getOptions', 'jqtree'), {'id':'tree-view','dragAndDrop':true,'saveState':true,'dataUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/systemEntity/buildTree','autoOpen':false,'selectable':false,'useContextMenu':true}));
+	jQuery('#contact-form').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'attributes':[{'id':'application_models_forms_SearchForm_title','inputID':'application_models_forms_SearchForm_title','errorID':'application_models_forms_SearchForm_title_em_','model':'application\\models\\forms\\SearchForm','name':'title','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_roleId','inputID':'application_models_forms_SearchForm_roleId','errorID':'application_models_forms_SearchForm_roleId_em_','model':'application\\models\\forms\\SearchForm','name':'roleId','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_ownerId','inputID':'application_models_forms_SearchForm_ownerId','errorID':'application_models_forms_SearchForm_ownerId_em_','model':'application\\models\\forms\\SearchForm','name':'ownerId','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_assignedId','inputID':'application_models_forms_SearchForm_assignedId','errorID':'application_models_forms_SearchForm_assignedId_em_','model':'application\\models\\forms\\SearchForm','name':'assignedId','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_parentId','inputID':'application_models_forms_SearchForm_parentId','errorID':'application_models_forms_SearchForm_parentId_em_','model':'application\\models\\forms\\SearchForm','name':'parentId','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_state','inputID':'application_models_forms_SearchForm_state','errorID':'application_models_forms_SearchForm_state_em_','model':'application\\models\\forms\\SearchForm','name':'state','enableAjaxValidation':false},{'id':'application_models_forms_SearchForm_type','inputID':'application_models_forms_SearchForm_type','errorID':'application_models_forms_SearchForm_type_em_','model':'application\\models\\forms\\SearchForm','name':'type','enableAjaxValidation':false}],'errorCss':'error'});
+	
+	    $("#addFolder").on("shown.bs.modal", function () {
+	        $(this).find("#application_models_SystemEntityModel_title").focus();
+	    });
+	    $("#addFolder").on("hidden.bs.modal", function () {
+	        $(this).find("#application_models_SystemEntityModel_title").val("");
+	    });
+	
+	jQuery('#add-folder-form').yiiactiveform({'validateOnChange':false,'validateOnSubmit':true,'errorCssClass':'has-error','afterValidate':function(form, attribute, data, hasError){
+	            var len = $.map(attribute, function(n, i) { 
+	                return i; 
+	            }).length;
+	            if(len == 0){
+	                $(document).trigger("company.folder.add",[true]);
+	                return true;
+	            } else { 
+	                $(document).trigger("company.folder.add",[false]);
+	                return false;
+	            }
+	        },'attributes':[{'id':'application_models_SystemEntityModel_title','inputID':'application_models_SystemEntityModel_title','errorID':'application_models_SystemEntityModel_title_em_','model':'application\\models\\SystemEntityModel','name':'title','enableAjaxValidation':true},{'id':'application_models_SystemEntityModel_parentId','inputID':'application_models_SystemEntityModel_parentId','errorID':'application_models_SystemEntityModel_parentId_em_','model':'application\\models\\SystemEntityModel','name':'parentId','enableAjaxValidation':true}],'errorCss':'error'});
+	
+	    $("#addSystem").on("shown.bs.modal", function () {
+	        $(this).find("#application_models_SystemEntityModel_title").focus();
+	    });
+	    $("#addSystem").on("hidden.bs.modal", function () {
+	        $(this).find("#application_models_SystemEntityModel_title").val("");
+	    });
+	
+	jQuery('#add-system-form').yiiactiveform({'validateOnChange':false,'validateOnSubmit':true,'errorCssClass':'has-error','afterValidate':function(form, attribute, data, hasError){ 
+	            var len = $.map(attribute, function(n, i) { 
+	                return i; 
+	            }).length;
+	            if(len == 0){
+	                $(document).trigger("company.system.add", true);
+	                return true;
+	            } else { 
+	                $(document).trigger("company.system.add", false);
+	                return false;
+	            }
+	        },'attributes':[{'id':'application_models_SystemEntityModel_title','inputID':'application_models_SystemEntityModel_title','errorID':'application_models_SystemEntityModel_title_em_','model':'application\\models\\SystemEntityModel','name':'title','enableAjaxValidation':true},{'id':'application_models_SystemEntityModel_parentId','inputID':'application_models_SystemEntityModel_parentId','errorID':'application_models_SystemEntityModel_parentId_em_','model':'application\\models\\SystemEntityModel','name':'parentId','enableAjaxValidation':true}],'focus':'#application_models_SystemEntityModel_title','errorCss':'error'});
+	
+	    $("#updateEntity").on("hidden.bs.modal", function () {
+	      if( $(this).find(".section-input").hasClass("has-error")){
+	          $(this).find(".section-input").removeClass("has-error");
+	    }
+	        $(this).find(".errorMessage").hide(); 
+	    });
+	
+	jQuery('#update-entity-form').yiiactiveform({'validateOnChange':false,'validateOnSubmit':true,'errorCssClass':'has-error','afterValidate':function(form, data, hasError) { if(hasError) {     $(document).trigger("company.entity.rename.afterValidate", false);      return false;  } return true; },'attributes':[{'id':'application_models_SystemEntityModel_title','inputID':'application_models_SystemEntityModel_title','errorID':'application_models_SystemEntityModel_title_em_','model':'application\\models\\SystemEntityModel','name':'title','enableAjaxValidation':true}],'errorCss':'error'});
+	$.contextMenu({'reposition':false,'selector':'#system-folder-grid table tbody tr.System, #system-folder-grid table tbody tr.Folder, #system-folder-grid table tbody tr.Training, #system-folder-grid table tbody tr.TrainingFolder, #system-folder-grid table tbody tr.Policy, #system-folder-grid table tbody tr.PolicyFolder, .useContext','items':{'create':{'name':'&lt;span class=\"glyphicon glyphicon-plus\" /&gt;Create','icon':'create','items':{'create_folder':{'name':'&lt;span class=\"glyphicon glyphicon-folder-close\" /&gt;Folder','icon':'create_folder','visible':true,'disabled': function(key, opt) {
+	                            // this references the trigger element
+	                            return this.contextMenuRules('createFolderDisabled');
+	                        }},'create_system':{'name':'&lt;span class=\"glyphicon glyphicon-file\" /&gt;System','icon':'create_system','visible':true,'disabled': function(key, opt) {
+	                            // this references the trigger element
+	                            return this.contextMenuRules('createSystemDisabled');
+	                        }}},'visible':true,'disabled': function(key, opt) {       
+	                    disabled = this.contextMenuRules('createDisabled');
+	                    if (disabled == false) {
+	                        disabled = this.contextMenuRules('isRecoveryFolder');
+	                    }
+	                    return disabled;
+	                }},'rename':{'name':'&lt;span class=\"glyphicon glyphicon-pencil\" /&gt;Rename','icon':'rename','visible':true,'disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        disabled = this.contextMenuRules('renameDisabled');
+	                        if (disabled == false) {                    
+	                            disabled = this.contextMenuRules('isRecoveryFolder');
+	                        }
+	                        return disabled;
+	                    }},'delete':{'name':'&lt;span class=\"glyphicon glyphicon-remove\" /&gt;Delete','icon':'delete','disabled': function(key, opt) {
+	                        disabled = this.contextMenuRules('deleteDisabled');                       
+	                        return disabled;   
+	                    },'visible':true},'copy':{'name':'&lt;span class=\"glyphicon glyphicon-copy\" /&gt;Duplicate','icon':'copy','id':'copy','disabled': function(key, opt) {
+	                        disabled = this.contextMenuRules('copyDisabled');
+	                        if (disabled == false) {                    
+	                            disabled = this.contextMenuRules('isRecoveryFolder');
+	                        }
+	                        return disabled;                       
+	                    },'visible':true},'copyhref':{'name':'&lt;span class=\"glyphicon glyphicon-link\" /&gt;Copy URL','icon':'copyhref','id':'copyhref','disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        return this.contextMenuRules('copyHrefDisabled');
+	                    }},'openblank':{'name':'&lt;span class=\"glyphicon glyphicon-new-window\" /&gt;New Window','icon':'open','id':'open','disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        return this.contextMenuRules('openBlankDisabled');
+	                    }},'share':{'name':'&lt;span class=\"glyphicon glyphicon-user\" /&gt;Assign','icon':'share','id':'share','disabled': function(key, opt) {
+	                    disabled = this.contextMenuRules('shareDisabled');
+	                    if (disabled == false) {                    
+	                        disabled = this.contextMenuRules('isRecoveryFolder');
+	                    }
+	                    return disabled;
+	                },'visible':true}},'events':
+	            {
+	                show: function(opt) {
+	                    var $this = this;
+	                    $.contextMenu.setInputValues(opt, $this.data());
+	                },
+	                hide: function(opt) {
+	                    var $this = this;
+	                    $.contextMenu.getInputValues(opt, $this.data());
+	                }
+	            },'callback': function(key, options) { $(document).ddBridge('contextMenuCallback', key, options); },'aliasEvent':'tree.contextmenu'});
+	$.contextMenu({'reposition':false,'selector':'#tree-view div','items':{'create':{'name':'&lt;span class=\"glyphicon glyphicon-plus\" /&gt;Create','icon':'create','items':{'create_folder':{'name':'&lt;span class=\"glyphicon glyphicon-folder-close\" /&gt;Folder','icon':'create_folder','visible':true,'disabled': function(key, opt) {
+	                            // this references the trigger element
+	                            return this.contextMenuRules('createFolderDisabled');
+	                        }},'create_system':{'name':'&lt;span class=\"glyphicon glyphicon-file\" /&gt;System','icon':'create_system','visible':true,'disabled': function(key, opt) {
+	                            // this references the trigger element
+	                            return this.contextMenuRules('createSystemDisabled');
+	                        }}},'visible':true,'disabled': function(key, opt) {       
+	                    disabled = this.contextMenuRules('createDisabled');
+	                    if (disabled == false) {
+	                        disabled = this.contextMenuRules('isRecoveryFolder');
+	                    }
+	                    return disabled;
+	                }},'rename':{'name':'&lt;span class=\"glyphicon glyphicon-pencil\" /&gt;Rename','icon':'rename','visible':true,'disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        disabled = this.contextMenuRules('renameDisabled');
+	                        if (disabled == false) {                    
+	                            disabled = this.contextMenuRules('isRecoveryFolder');
+	                        }
+	                        return disabled;
+	                    }},'delete':{'name':'&lt;span class=\"glyphicon glyphicon-remove\" /&gt;Delete','icon':'delete','disabled': function(key, opt) {
+	                        disabled = this.contextMenuRules('deleteDisabled');                       
+	                        return disabled;   
+	                    },'visible':true},'copy':{'name':'&lt;span class=\"glyphicon glyphicon-copy\" /&gt;Duplicate','icon':'copy','id':'copy','disabled': function(key, opt) {
+	                        disabled = this.contextMenuRules('copyDisabled');
+	                        if (disabled == false) {                    
+	                            disabled = this.contextMenuRules('isRecoveryFolder');
+	                        }
+	                        return disabled;                       
+	                    },'visible':true},'copyhref':{'name':'&lt;span class=\"glyphicon glyphicon-link\" /&gt;Copy URL','icon':'copyhref','id':'copyhref','disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        return this.contextMenuRules('copyHrefDisabled');
+	                    }},'openblank':{'name':'&lt;span class=\"glyphicon glyphicon-new-window\" /&gt;New Window','icon':'open','id':'open','disabled': function(key, opt) {
+	                        // this references the trigger element
+	                        return this.contextMenuRules('openBlankDisabled');
+	                    }},'share':{'name':'&lt;span class=\"glyphicon glyphicon-user\" /&gt;Assign','icon':'share','id':'share','disabled': function(key, opt) {
+	                    disabled = this.contextMenuRules('shareDisabled');
+	                    if (disabled == false) {                    
+	                        disabled = this.contextMenuRules('isRecoveryFolder');
+	                    }
+	                    return disabled;
+	                },'visible':true}},'events':
+	                {
+	                    show: function(opt) {
+	                        var $this = this;
+	                        $.contextMenu.setInputValues(opt, $this.data());
+	                    },
+	                    hide: function(opt) {
+	                        var $this = this;
+	                        $.contextMenu.getInputValues(opt, $this.data());
+	                    }
+	                },'callback': function(key, options) { $(document).ddBridge('contextMenuCallback', key, options); },'aliasEvent':'tree.contextmenu'});
+	
+	                    $(document).ajaxError(function(event, XHR, ajaxOptions, thrownError) {
+	                        if (XHR.status == 403) {
+	                            $.fn.notifyWidget('notify', {'type': 'danger', 'message': 'You can\'t do this action'});
+	                        }
+	                    });
+	                
+	            
+	                        $.fn.copy({'duplicateUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/duplicateSystem/duplicate','folderType':'Folder','systemType':'System'});
+	                    
+	            
+	                        jQuery('#expire-session-dialog').restoreSystem({'dialogId':'expire-session-dialog','restoreUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/restoreSystem/tryRestoreSession/systemId/0/token/0e6fc87d17e1dc4f8c7cf5cacf1a625bf8c28d767deefd318f1087d607959f62','checkLogoutUrl':'http://rogakopyta.intranetdevelopment.nginx70.devplatform1.com/company/restoreSystem/checkLogout/systemId/0/token/6f17af14a206fc8727abdd522026f780a39b52b0572b9d8e2bcd339c86666dce','onRestoreSystem':function(self){                
+	                if ($("#system-model-form").length) {                    
+	                    $("#system-model-form").attr("action", self.options.restoreUrl);                     
+	                    $("#" + self.options.dialogId + " form :input").not(":submit").clone().hide().appendTo("#system-model-form");
+	                    $("#system-model-form").submit();  
+	                    return false;
+	                } else {
+	                    return true;
+	                }
+	                return true;
+	            },'timeoutDuration':10830000});
+	                    
+	jQuery('#login-form').yiiactiveform({'validateOnChange':false,'validateOnSubmit':true,'afterValidate':function(form, attribute, data, hasError){
+	            var len = $.map(attribute, function(n, i) { 
+	                return i; 
+	            }).length;
+	            if(len == 0){
+	                return jQuery("#expire-session-dialog").restoreSystem("restoreSystem");
+	            } else {                 
+	                return false;
+	            }
+	        },'attributes':[{'id':'application_models_forms_LoginForm_password','inputID':'application_models_forms_LoginForm_password','errorID':'application_models_forms_LoginForm_password_em_','model':'application\\models\\forms\\LoginForm','name':'password','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+	
+	if(jQuery.trim(value)=='') {
+		messages.push("Password cannot be blank.");
+	}
+	
+	}}],'errorCss':'error'});
+});
+/*]]&gt;*/
+</script>
+
+<ul class="context-menu-list context-menu-root" style="display: none;"><li class="context-menu-item context-menu-submenu icon icon-create"><span><span class="glyphicon glyphicon-plus"></span>Create</span><ul class="context-menu-list"><li class="context-menu-item icon icon-create_folder"><span><span class="glyphicon glyphicon-folder-close"></span>Folder</span></li><li class="context-menu-item icon icon-create_system"><span><span class="glyphicon glyphicon-file"></span>System</span></li></ul></li><li class="context-menu-item icon icon-rename"><span><span class="glyphicon glyphicon-pencil"></span>Rename</span></li><li class="context-menu-item icon icon-delete"><span><span class="glyphicon glyphicon-remove"></span>Delete</span></li><li class="context-menu-item icon icon-copy"><span><span class="glyphicon glyphicon-copy"></span>Duplicate</span></li><li class="context-menu-item icon icon-copyhref"><span><span class="glyphicon glyphicon-link"></span>Copy URL</span></li><li class="context-menu-item icon icon-open"><span><span class="glyphicon glyphicon-new-window"></span>New Window</span></li><li class="context-menu-item icon icon-share"><span><span class="glyphicon glyphicon-user"></span>Assign</span></li></ul><ul class="context-menu-list context-menu-root" style="width: 126px; top: 294px; left: 463px; z-index: 1; overflow: visible; display: none;"><li class="context-menu-item context-menu-submenu icon icon-create"><span><span class="glyphicon glyphicon-plus"></span>Create</span><ul class="context-menu-list" style="width: 121px; z-index: 2; top: -1px; left: 124px;"><li class="context-menu-item icon icon-create_folder"><span><span class="glyphicon glyphicon-folder-close"></span>Folder</span></li><li class="context-menu-item icon icon-create_system"><span><span class="glyphicon glyphicon-file"></span>System</span></li></ul></li><li class="context-menu-item icon icon-rename"><span><span class="glyphicon glyphicon-pencil"></span>Rename</span></li><li class="context-menu-item icon icon-delete"><span><span class="glyphicon glyphicon-remove"></span>Delete</span></li><li class="context-menu-item icon icon-copy"><span><span class="glyphicon glyphicon-copy"></span>Duplicate</span></li><li class="context-menu-item icon icon-copyhref"><span><span class="glyphicon glyphicon-link"></span>Copy URL</span></li><li class="context-menu-item icon icon-open"><span><span class="glyphicon glyphicon-new-window"></span>New Window</span></li><li class="context-menu-item icon icon-share"><span><span class="glyphicon glyphicon-user"></span>Assign</span></li></ul><div role="dialog" class="modal fade in" id="confirm" style="display: block;"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><input type="button" value="×" name="yt0" data-dismiss="modal" class="close" /><h4 class="modal-title">Confirm</h4></div><div class="modal-body">Are you sure you want to delete?</div><div class="modal-footer"><input type="button" value="No" name="yt1" class="btn btn-default modal-no" /><input type="button" value="Yes" name="yt2" class="btn btn-primary modal-yes" /></div></div></div></div><div class="modal-backdrop fade in"></div></body></html>
